@@ -20,8 +20,8 @@ const CurrentActivities = () => {
     {
       name: "Projects",
       projects: [
-        { title: "From-To Clone", description: "Create a free-to-use version of the From-To app", team: ["Jeffrey Torres", "me"], currentProgress: 30, total:100, label: "30% complete" },
-        { title: "Kubernetes", description: "Contribute to Kubernetes open-source project", currentProgress: 0, total:100,  label: "0/100 commits" }
+        { title: "From-To Clone", description: "Create a free-to-use version of the From-To app", team: ["Jeffrey Torres", "me"], currentProgress: 50, total:100, label: "30% complete" },
+        // { title: "Kubernetes", description: "Contribute to Kubernetes open-source project", currentProgress: 0, total:100,  label: "0/100 commits" }
       ],
     },
     {
@@ -35,9 +35,9 @@ const CurrentActivities = () => {
     {
       name: "Activities and Interests",
       projects: [
-        { title: "Learning Spanish", description: "", currentProgress: 40, total:100, label: "A2 Level" },
-        { title: "Strength Training", team: ["me"], description: "Lift 100% of bodyweight in farmer's carries", currentProgress: 110, total:195, label: "110/195 lbs"},
-        { title: "Jazz Harmonies", description: "", currentProgress: 10, total:100, label: "10% complete" },
+        { title: "Learn Spanish", description: "", currentProgress: 40, total:100, label: "A2 Level" },
+        { title: "Strength Training", team: ["me"], description: "", currentProgress: 110, total:195, label: ""},
+        { title: "Jazz Harmonies", description: "", currentProgress: 10, total:100, label: "" },
       ],
     },
   ]

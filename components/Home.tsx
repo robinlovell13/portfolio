@@ -32,12 +32,13 @@ export default function Home() {
             </a>
         </section>}
             
-            <Skills/>
+            
             <CurrentActivities />
-            <Recommendations />
             <CompletedProjects />
             <ProfessionalExperience />
             <Education />
+            <Recommendations />
+            <Skills/>
             <About />
             <Contact />
         </main>
