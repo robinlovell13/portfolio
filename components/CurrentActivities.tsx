@@ -20,7 +20,7 @@ const CurrentActivities = () => {
     {
       name: "Projects",
       projects: [
-        { title: "From-To Clone", description: "Create a free-to-use version of the From-To app", team: ["Jeffrey Torres", "me"], currentProgress: 50, total:100, label: "30% complete" },
+        { title: "From-To Clone", description: "Create a free-to-use version of the From-To app", team: ["Jeffrey Torres", "me"], currentProgress: 50, total:100, label: "50% complete" },
         // { title: "Kubernetes", description: "Contribute to Kubernetes open-source project", currentProgress: 0, total:100,  label: "0/100 commits" }
       ],
     },
