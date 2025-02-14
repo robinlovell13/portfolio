@@ -11,7 +11,7 @@ import Skills from "../components/Skills"
 import { useState } from "react";
 
 export default function Home() {
-    const [forEmployers, setForEmployers] = useState(true);
+    const [forEmployers, setForEmployers] = useState(false);
     return (
         <main>
             <Navigation forEmployers={forEmployers} setForEmployers={setForEmployers} />

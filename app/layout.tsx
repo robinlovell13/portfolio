@@ -1,7 +1,8 @@
 import "./globals.css"
 import { Press_Start_2P } from "next/font/google"
 import StarryBackground from "../components/StarryBackground"
-import type React from "react" // Import React
+import Navigation from "../components/Navigation"
+import type React from "react"
 
 const pixelFont = Press_Start_2P({
   weight: "400",
@@ -23,7 +24,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${pixelFont.variable} font-pixel bg-black text-starWhite`}>
         <StarryBackground />
-        <div className="relative z-10">{children}</div>
+       
+        <div className="relative z-10 pt-16">{children}</div>
       </body>
     </html>
   )

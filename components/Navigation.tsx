@@ -1,4 +1,5 @@
 import Link from "next/link"
+import ViewToggle from "./ViewToggle"
 
 const Navigation = ({forEmployers, setForEmployers}) => {
   return (
@@ -9,12 +10,9 @@ const Navigation = ({forEmployers, setForEmployers}) => {
             Home
           </Link>
         </li>
-        <li className = "border-l-2 border-r-2 border-white px-6 py-4"  onClick={() => setForEmployers((prev: boolean) => !prev)}>
-          {forEmployers ?<p className="hover:text-gray-300">For Prospective Clients</p> : <p className="hover:text-gray-300">For Prospective Employers</p>}
-        </li>
         <li className = "border-l-2 border-r-2 border-white px-6 py-4">
           <Link href="#current-activities" className="hover:text-gray-300">
-            What Am I Working On?
+            Current Projects
           </Link>
         </li>
         <li className = "border-l-2 border-r-2 border-white px-6 py-4">
@@ -47,7 +45,7 @@ const Navigation = ({forEmployers, setForEmployers}) => {
             Contact
           </Link>
         </li>
-        
+        <ViewToggle forEmployers = {forEmployers} setForEmployers = {setForEmployers}/>
         
       </ul>
     </nav>

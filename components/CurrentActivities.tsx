@@ -46,7 +46,7 @@ const CurrentActivities = () => {
 
   return (
     <section id="current-activities" className="min-h-screen py-16 px-8">
-      <h2 className="text-3xl mb-12 text-center">What Am I Working On?</h2>
+      <h2 className="text-3xl mb-12 text-center">Current Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {categories.map((category, index) => (
           <ProjectCategory key={index} category={category} />
