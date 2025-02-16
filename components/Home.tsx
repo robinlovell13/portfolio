@@ -13,7 +13,7 @@ import { useState } from "react";
 export default function Home() {
     const [forEmployers, setForEmployers] = useState(false);
     return (
-        <main>
+        <main >
             <Navigation forEmployers={forEmployers} setForEmployers={setForEmployers} />
             {forEmployers ? <section id="home" className="min-h-screen flex flex-col items-center justify-center">
                 <div className="text-center">

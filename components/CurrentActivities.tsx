@@ -5,6 +5,8 @@ interface Project {
   team?: string[]
   description: string
   currentProgress: number,
+  currentTask?: string,
+  isActive?: boolean,
   total: number,
   label?: string
 
@@ -20,6 +22,7 @@ const CurrentActivities = () => {
     {
       name: "Projects",
       projects: [
+        { title: "Personal Website", description: "", currentProgress: 85, total:100, label: "85% complete", isActive: true, currentTask: "Create responsive version for mobile"},
         { title: "From-To Clone", description: "Create a free-to-use version of the From-To app", team: ["Jeffrey Torres", "me"], currentProgress: 50, total:100, label: "50% complete" },
         // { title: "Kubernetes", description: "Contribute to Kubernetes open-source project", currentProgress: 0, total:100,  label: "0/100 commits" }
       ],
