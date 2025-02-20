@@ -96,3 +96,11 @@ body {
     @apply bg-background text-foreground;
   }
 }
+.cta-button {
+  display: inline-block;
+  border: 2px solid white;
+  padding: 5px 10px;
+  text-decoration: none;
+  background-color: black;
+  font-weight: bold;
+}
