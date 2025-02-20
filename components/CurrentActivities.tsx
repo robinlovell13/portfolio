@@ -53,7 +53,7 @@ const CurrentActivities = () => {
   
 
 
-  const statuses: ("To Do" | "In Progress" | "Done")[] = ["To Do", "In Progress", "Done"]
+  const statuses: ("To Do" | "In Progress" | "Done")[] = ["Done", "In Progress", "To Do"]
 
   return (
     <section id="projects" className="min-h-screen py-16 px-4 md:px-8">
