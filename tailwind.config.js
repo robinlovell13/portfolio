@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'custom': '985px',
+      },
       colors: {
         midnight: "#191970",
         starWhite: "#F8F8FF",
