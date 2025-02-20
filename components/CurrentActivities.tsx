@@ -27,7 +27,7 @@ const CurrentActivities = () => {
     {
       name: "Personal",
       projects: [
-        { title: "Professional Website", description: "Build website for software services", isActive: true, currentTask: "Update projects section", status: "In Progress" },
+        { title: "Personal Website", description: "Create a central repository for my creative and professional endeavors", isActive: true, currentTask: "Improve UX on mobile", status: "In Progress" },
         { title: "From-To Clone", description: "Create a free-to-use version of the From-To app", team: ["Jeffrey Torres", "me"], status: "In Progress" },
         { title: "Daily Tracker", description: "Built a personal wellbeing tracker", year: 2023, status: "Done" },
         { title: "Kaella Makeup Store POC", description: "Created an ecommerce website POC for a Peruvian small business", year: 2023, status: "Done", link: "https://kaella-eta.vercel.app/" },
@@ -38,7 +38,9 @@ const CurrentActivities = () => {
       name: "Self-study",
       projects: [
         { title: "Build an LLM from Scratch", description: "Learn to implement custom LLMs through this book by Sebastian Raschka", currentProgress: 32, total: 100, label: "32% complete", status: "In Progress", isActive: true, currentTask: "Chapter 3" },
-        { title: "Fundamentals of Software Architecture", description: "Book & course by Mark Richards and Neal Ford", currentProgress: 10, total: 100, label: "10% complete", status: "In Progress" }
+        { title: "Fundamentals of Software Architecture", description: "Book & course by Mark Richards and Neal Ford", currentProgress: 10, total: 100, label: "10% complete", status: "In Progress" },
+        { title: "UX Design", description: "", status: "To Do" },
+        { title: "Tailwind CSS", description: "", status: "To Do" }
 
       ],
     },

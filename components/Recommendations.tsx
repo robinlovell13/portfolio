@@ -35,7 +35,7 @@ const Recommendations = () => {
                             <h3 className="text-xl mb-2">{reference.name}</h3>
                             <h4 className="text-md mb-2">{reference.position}</h4>
                             <h4 className="text-md mb-2">{reference.relation} at {reference.company}</h4>
-                            <p className="text-sm mb-2">{reference.message}</p>
+                            <p className="text-sm mb-2 whitespace-pre-line">{reference.message}</p>
                         </div>
                     ))}
                 </div>

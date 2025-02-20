@@ -31,7 +31,7 @@ const ExperienceEntry: React.FC<ExperienceEntryProps> = ({ experience }) => {
           {experience.fromDate} - {experience.toDate}
         </p>
       </div>
-      <p className="mb-4">{experience.description}</p>
+      <p className="mb-4 whitespace-pre-line">{experience.description}</p>
       {experience.projects.length > 0 && (
         <div>
           <h5 className="text-lg font-semibold mb-2">Key Projects:</h5>

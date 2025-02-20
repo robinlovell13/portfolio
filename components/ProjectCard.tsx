@@ -23,7 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <ExternalLink size={16} />
       </Link>)}
       <h6 className="text-lg font-semibold mb-2">{project.title}</h6>
-      <p className="text-sm">{project.description}</p>
+      <p className="text-sm whitespace-pre-line">{project.description}</p>
     </div>
   )
 }
