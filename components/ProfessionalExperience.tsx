@@ -14,6 +14,7 @@ interface Project {
   title: string
   team?: string[]
   description: string
+  link?: string
 }
 
 const ProfessionalExperience: React.FC = () => {
@@ -28,15 +29,17 @@ const ProfessionalExperience: React.FC = () => {
         {
           title: "Common Crow Website",
           description: "Develop and maintain company website",
+          link: "http://www.commoncrow.com/"
         }
       ]
+      
     },
     {
       company: "Perficient",
       position: "Associate Software Engineer Consultant",
       fromDate: "January 2022",
       toDate: "March 2023",
-      description: "Worked directly with Fortune 500 clients in Agile environment to develop technological solutions to business needs",
+      description: "Worked directly with Fortune 500 clients in Agile environment to develop technical solutions for business needs",
       projects: [
         {
           title: "Amazon Connect Disaster Recovery Tool",
@@ -49,6 +52,7 @@ const ProfessionalExperience: React.FC = () => {
         {
           title: "IVR-to-Flowchart Tool",
           description: "● Created a tool using JavaScript and Mermaid to transform complex contact center workflows into clear, visually distinct flowcharts. ● Enhanced client understanding and interaction with these flows and reduced labor required for generating project documentation. ● Authored an in-depth blog post on the tool, showcasing the company's innovative services and driving client acquisition.",
+          link: "https://blogs.perficient.com/2023/03/07/ivr-to-flowchart-tool/"
         },
       ],
     }

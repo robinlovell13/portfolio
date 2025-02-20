@@ -27,7 +27,7 @@ const CurrentActivitiesCategory: React.FC<CategoryProps> = ({ category }) => {
       <h3 className="text-2xl mb-4">{category.name}</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {displayProjects.map((project, index) => (
-          <div key={index} className="bg-transparent border-2 border-white p-4 rounded hover:text-gray-300 hover:border-gray-300">
+          <div key={index} className="bg-transparent border-2 border-white p-4 rounded hover:bg-gray-800 hover:border-gray-300">
             <h4 className="text-lg mb-2">{project.title}</h4>
             <p className="text-sm mb-2">{project.description}</p>
             <ProgressBar currentProgress={project.currentProgress} total={project.total}/>
@@ -39,7 +39,7 @@ const CurrentActivitiesCategory: React.FC<CategoryProps> = ({ category }) => {
         <div className="mt-4 text-center">
           <Link
             href={`/projects/${category.name.toLowerCase().replace(/\s+/g, "-")}`}
-            className="text-blue-400 hover:text-blue-300"
+            className="text-blue-400 hover:bg-gray-800"
           >
             View All
           </Link>

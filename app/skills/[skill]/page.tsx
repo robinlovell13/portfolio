@@ -71,7 +71,7 @@ export default function SkillPage({ params }: { params: { skill: string } }) {
           ))}
         </ul>
         <div className="mt-8">
-          <Link href="/#skills" className="text-blue-400 hover:text-blue-300">
+          <Link href="/#skills" className="text-blue-400 hover:bg-gray-800">
             Back to Skills
           </Link>
         </div>

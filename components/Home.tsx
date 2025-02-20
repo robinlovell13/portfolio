@@ -28,8 +28,8 @@ export default function Home() {
                             <h1 className="text-4xl mb-4">Lovell Creations</h1>
                             <p className="text-xl">Web Solutions | Custom LLMs | Software Engineering</p>
                         </div>
-                        <a href="#contact" className="text-center text-xl mt-48 underline hover:text-gray-300 cta-button">
-                            Offering FREE development services to 3 clients! Contact me if interested.
+                        <a href="#contact" className="text-center text-xl mt-48 underline hover:bg-gray-800 cta-button">
+                            Offering <span className="text-green-500">FREE</span> development services to 3 clients! Contact me if interested.
                         </a>
                     </section>}
 

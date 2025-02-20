@@ -23,20 +23,20 @@ const MoreMenu: React.FC = () => {
   }, [])
 
   return (
-    <div className="relative hover:text-gray-300 " ref={menuRef}>
-      <button className="flex items-center space-x-1 hover:text-gray-300" onClick={() => setIsOpen(!isOpen)}>
+    <div className="relative hover:bg-gray-800 " ref={menuRef}>
+      <button className="flex items-center space-x-1 hover:bg-gray-800" onClick={() => setIsOpen(!isOpen)}>
         <span>More</span>
         {isOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
       </button>
       {isOpen && (
         <div className="absolute right-0 mt-2 w-48 bg-black rounded-md shadow-lg py-1 z-20">
-             <a href="#about" className="hover:text-gray-300 block px-4 py-2 text-sm ">
+             <a href="#about" className="hover:bg-gray-800 block px-4 py-2 text-sm ">
             About
           </a>
-          <a href="#contact" className="hover:text-gray-300 block px-4 py-2 text-sm ">
+          <a href="#contact" className="hover:bg-gray-800 block px-4 py-2 text-sm ">
             Contact
           </a>
-          <a href="#contact" className="hover:text-gray-300 block px-4 py-2 text-sm ">
+          <a href="#contact" className="hover:bg-gray-800 block px-4 py-2 text-sm ">
             Contact
           </a>
         </div>

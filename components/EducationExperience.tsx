@@ -14,7 +14,8 @@ interface Education {
 interface Project {
     title: string
     team?: string[]
-    description: string
+    description: string,
+    link?: string
   }
   
 
@@ -24,14 +25,15 @@ const Education: React.FC = () => {
             school: "University of Massachusetts Amherst",
             major: "Informatics",
             college: "College of Information and Computer Science",
-            fromDate: "January 2022",
-            toDate: "March 2023",
+            fromDate: "September 2018",
+            toDate: "May 2021",
             skills: [""],
             projects: [
                 {
                     title: "2020 US Election Tweet Analysis",
                     team: ["Alain Duplan", "Harshul Shukla"],
                     description: "- Built an interactive visualization tool with D3, JavaScript, HTML, and CSS that enables users to explore the political leanings of tweets posted in the months before the election. - Used R to clean and analyze 865 MB data set containing nearly two million tweets. - Employed principles of effective visualization design to answer the question: “Could tweets be used to predict the election’s outcome?",
+                    link: "https://rmlovell.github.io/2020ElectionAnalysis/tweets_map.html"
                 },
             ],
         }

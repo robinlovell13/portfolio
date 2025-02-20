@@ -19,13 +19,13 @@ const Navigation = ({forEmployers, setForEmployers}) => {
         </button>
       </div>
       <div className="hidden md:flex justify-center text-white items-center flex-grow space-x-6">
-       <a href="#about" className="hover:text-gray-300">
+       <a href="#projects" className="hover:bg-gray-800">
             Projects
           </a>
-          <a href="#projects" className="hover:text-gray-300">
+          <a href="#professional-experience" className="hover:bg-gray-800">
             Experience
           </a>
-          <a href="#contact" className="hover:text-gray-300 hidden lg:flex">
+          <a href="#recommendations" className="hover:bg-gray-800 hidden lg:flex">
             Recommendations
           </a>
         </div>
@@ -38,42 +38,37 @@ const Navigation = ({forEmployers, setForEmployers}) => {
         <div className="mt-6 absolute left-0 mt-4 bg-black w-48">
           <ul className="flex flex-col space-y-2">
             <li>
-              <Link href="/" className="block py-2 hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
               Home
               </Link>
             </li>
             <li>
-              <a href="#current-activities" className="block py-2 hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
+              <a href="#projects" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
               Projects
               </a>
             </li>
             <li>
-              <a href="#professional-experience" className="block py-2 hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
+              <a href="#professional-experience" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
               Experience
               </a>
             </li>
             <li>
-              <a href="#completed-projects" className="block py-2 hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
-              Past Projects
-              </a>
-            </li>
-            <li>
-              <a href="#education" className="block py-2 hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
+              <a href="#education" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
               Education
               </a>
             </li>
             <li>
-              <a href="#recommendations" className="block py-2 hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
+              <a href="#recommendations" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
               Recommendations
               </a>
             </li>
             <li>
-              <a href="#about" className="block py-2 hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
+              <a href="#about" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
               About
               </a>
             </li>
             <li>
-              <a href="#contact" className="block py-2 hover:text-gray-300" onClick={() => setIsMenuOpen(false)}>
+              <a href="#contact" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
               Contact
               </a>
             </li>

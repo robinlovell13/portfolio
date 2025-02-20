@@ -5,6 +5,7 @@ interface Project {
     title: string
     team?: string[]
     description: string
+    link?: string
   }
   
 interface Education {
@@ -37,7 +38,7 @@ const EducationEntry: React.FC<EducationEntryProps> = ({ education }) => {
           <h5 className="text-lg font-semibold mb-2">Key Projects:</h5>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {education.projects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
+              <ProjectCard key={index} project={project}/>
             ))}
           </div>
         </div>

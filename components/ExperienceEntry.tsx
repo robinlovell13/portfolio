@@ -5,6 +5,7 @@ interface Project {
     title: string
     team?: string[]
     description: string
+    link?: string
   }
   
 interface Experience {
