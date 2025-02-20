@@ -65,9 +65,10 @@ const CurrentActivities = () => {
               {category.name}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-              {statuses.map(status => (
+              {statuses.map(status => category.projects
+                    .filter(project => project.status === status).length !== 0 && (
                 <div key={status} className="space-y-4">
-                  <h4 className="text-lg font-medium mb-3 text-center">{status}</h4>
+                  <h4 className="text-lg font-medium mb-3 text-center mt-4">{status}</h4>
                   {category.projects
                     .filter(project => project.status === status)
                     .map(project => (
