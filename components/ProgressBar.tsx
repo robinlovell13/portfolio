@@ -2,7 +2,7 @@ import React from "react";
 
 interface ProgressBarProps {
   currentProgress: number;
-  total: number;
+  total: number | undefined;
 }
 
 const ProgressBar: React.FC<ProgressBarProps> = ({ currentProgress, total}) => {
@@ -15,7 +15,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ currentProgress, total}) => {
 
       <div className="relative w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
         <div
-          className="bg-blue-600 h-2.5 rounded-full transition-all duration-300"
+          className="bg-green-500 h-2.5 rounded-full transition-all duration-300"
           style={{ width: `${progress}%` }}
         ></div>
       </div>

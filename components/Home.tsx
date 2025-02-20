@@ -29,13 +29,12 @@ export default function Home() {
                             <p className="text-xl">Web Solutions | Custom LLMs | Software Engineering</p>
                         </div>
                         <a href="#contact" className="text-center text-xl mt-48 underline hover:text-gray-300 cta-button">
-                            Offering FREE development services to 3 clients! Contact me if you’re interested.
+                            Offering FREE development services to 3 clients! Contact me if interested.
                         </a>
                     </section>}
 
 
                 <CurrentActivities />
-                <CompletedProjects />
                 <ProfessionalExperience />
                 <Education />
                 <Recommendations />
