@@ -1,9 +1,9 @@
 const Contact = () => {
   return (
     <section id="contact" className="min-h-screen flex items-center justify-center p-8">
-      <div className="max-w-md w-full">
+      <div className=" w-full">
         <h2 className="text-3xl mb-6 text-center">Contact Me</h2>
-        <form className="space-y-4">
+        {/* <form className="space-y-4">
           <div>
             <label htmlFor="name" className="block mb-2">
               Name
@@ -31,7 +31,11 @@ const Contact = () => {
           <button type="submit" className="w-full bg-starWhite text-black p-2 hover:bg-gray-300">
             Send Message
           </button>
-        </form>
+        </form> */}
+        <p className="text-center text-lg">
+        email: robin lovell 13 at gmail dot com
+          
+        </p>
       </div>
     </section>
   )
