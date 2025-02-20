@@ -27,7 +27,7 @@ const CurrentActivities = () => {
     {
       name: "Personal",
       projects: [
-        { title: "Personal Website", description: "Create a central repository for my creative and professional endeavors", isActive: true, currentTask: "Improve UX on mobile", status: "In Progress" },
+        { title: "Personal Website", description: "Create a central repository for my creative and professional endeavors", isActive: true, currentTask: "Improve UX on mobile; fix skills section", status: "In Progress" },
         { title: "From-To Clone", description: "Create a free-to-use version of the From-To app", team: ["Jeffrey Torres", "me"], status: "In Progress" },
         { title: "Daily Tracker", description: "Built a personal wellbeing tracker", year: 2023, status: "Done" },
         { title: "Kaella Makeup Store POC", description: "Created an ecommerce website POC for a Peruvian small business", year: 2023, status: "Done", link: "https://kaella-eta.vercel.app/" },
