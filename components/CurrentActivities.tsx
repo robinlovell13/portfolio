@@ -61,12 +61,12 @@ const CurrentActivities = () => {
   const statuses: ("To Do" | "In Progress" | "Done")[] = ["Done", "In Progress", "To Do"]
 
   return (
-    <section id="projects" className="min-h-screen py-16 px-4 md:px-8">
-      <h2 className="text-3xl mb-12 text-center">Projects</h2>
+    <section id="projects" className="min-h-screen py-16">
+      <h2 className="text-3xl mb-12 text-center border-b-2 py-4 md:py-0 md:border-0 border-white">Projects</h2>
       <div className="space-y-12">
         {categories.map((category, categoryIndex) => (
-          <div key={category.name} className="bg-transparent border-2 border-white rounded-lg p-6 relative">
-            <h3 className="text-xl font-semibold mb-6 absolute top-2 left-2 bg-transparent border-2 border-white px-3 py-1 rounded">
+          <div key={category.name} className="bg-transparent md:border-2 md:border-white rounded-lg py-6 md:px-6 relative">
+            <h3 className="text-xl font-semibold mb-6 absolute top-2 left-2 bg-transparent md:border-2 md:border-white px-3 py-1 rounded">
               {category.name}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">

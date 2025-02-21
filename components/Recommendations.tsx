@@ -28,7 +28,7 @@ const Recommendations = () => {
     return (
         <section id = "recommendations">
             <h2 className="text-3xl mb-12 text-center">Recommendations</h2>
-            <div className="bg-transparent  p-6 rounded-lg">
+            <div className="bg-transparent rounded-lg">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {Recommendations.map((reference, index) => (
                         <div key={index} className="bg-transparent border-2 border-white p-4 rounded hover:bg-gray-800 hover:border-gray-300">

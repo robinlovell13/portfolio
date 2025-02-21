@@ -59,7 +59,7 @@ const ProfessionalExperience: React.FC = () => {
   ]
 
   return (
-    <section id="professional-experience" className="min-h-screen py-16 px-8">
+    <section id="professional-experience" className="min-h-screen py-16">
       <h2 className="text-3xl mb-12 text-center">Professional Experience</h2>
       <div className="space-y-12">
         {experiences.map((experience, index) => (

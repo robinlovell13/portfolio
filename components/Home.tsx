@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <main >
             <Navigation forEmployers={forEmployers} setForEmployers={setForEmployers} />
-            <div className="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+            <div className="max-w-screen-xl mx-auto mt-24 sm:mt-0 px-1 sm:px-6 md:px-8">
                 {forEmployers ? <section id="home" className="min-h-screen flex flex-col items-center justify-center">
                     <div className="text-center">
                         <h1 className="text-4xl mb-4">Robin Lovell</h1>

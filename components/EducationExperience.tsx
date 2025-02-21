@@ -40,7 +40,7 @@ const Education: React.FC = () => {
     ]
 
     return (
-        <section id="education" className="min-h-screen py-16 px-8">
+        <section id="education" className="min-h-screen py-16 ">
             <h2 className="text-3xl mb-12 text-center">Education</h2>
             <div className="space-y-12">
                 {educationExperiences.map((education, index) => (
