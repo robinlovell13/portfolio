@@ -27,7 +27,7 @@ const Recommendations = () => {
     ]
     return (
         <section id = "recommendations">
-            <h2 className="text-3xl mb-12 text-center">Recommendations</h2>
+            <h2 className="text-1xl xs:text-2xl sm:text-3xl mb-12 text-center">Recommendations</h2>
             <div className="bg-transparent rounded-lg">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {Recommendations.map((reference, index) => (

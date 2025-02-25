@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       screens: {
         'custom': '985px',
+        'xs': '375px'
       },
       colors: {
         midnight: "#191970",
