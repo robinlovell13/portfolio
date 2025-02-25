@@ -28,8 +28,8 @@ const CurrentActivities = () => {
       name: "Personal",
       projects: [
         { title: "Personal Website", description: "Create a central repository for my creative and professional endeavors", isActive: true, currentTask: "Improve UX on mobile; fix skills section", status: "In Progress" },
-        { title: "From-To Clone", description: "Create a free-to-use version of the From-To app", team: ["Jeffrey Torres", "me"], status: "In Progress" },
-        { title: "Daily Tracker", description: "Built a personal wellbeing tracker", year: 2023, status: "Done" },
+        { title: "From-To Clone", description: "Create a free-to-use version of the From-To app", team: ["Jeffrey Torres", "me"], status: "In Progress", currentTask: "Deploy" },
+        { title: "Daily Tracker", description: "Built a personal wellbeing tracker", year: 2023, status: "In Progress", currentTask: "Add auth and deploy" },
         { title: "Kaella Makeup Store POC", description: "Created an ecommerce website POC for a Peruvian small business", year: 2023, status: "Done", link: "https://kaella-eta.vercel.app/" },
         { title: "Kubernetes", description: "Contribute to Kubernetes open-source project", currentProgress: 0, total: 100, status: "To Do" },
       ],
@@ -66,7 +66,7 @@ const CurrentActivities = () => {
       <div className="space-y-12">
         {categories.map((category, categoryIndex) => (
           <div key={category.name} className="bg-transparent md:border-2 md:border-white rounded-lg py-6 md:px-6 relative">
-            <h3 className="text-xl font-semibold mb-6 absolute top-2 left-2 bg-transparent md:border-2 md:border-white px-3 py-1 rounded">
+            <h3 className="text-xl font-semibold mb-6 absolute top-2 left-2 bg-transparent md:border-2 md:border-white px-3 py-1 rounded-lg">
               {category.name}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
@@ -79,11 +79,11 @@ const CurrentActivities = () => {
                       .map(project => (
                         <div
                           key={project.title}
-                          className={`bg-transparent border-2 rounded p-4 relative pt-6 ${project.isActive ? "border-green-500" : "border-white"
+                          className={`bg-transparent border-2 rounded-lg p-4 relative pt-6 ${project.isActive ? "border-green-500" : "border-white"
                             }`}
                         >
                           {project.isActive && (
-                            <div className="absolute top-0 right-0 bg-green-500 text-xs text-black font-bold px-2 py-1 rounded-bl">
+                            <div className="absolute top-0 right-0 bg-green-500 text-xs text-black font-bold px-2 py-1 rounded-lg">
                               Active Task
                             </div>
                           )}

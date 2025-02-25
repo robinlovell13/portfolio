@@ -1,5 +1,6 @@
 import type React from "react"
 import CategorySkills from "./CategorySkills"
+import { useState } from "react"
 
 export interface Skill {
     name: string
@@ -10,7 +11,8 @@ export interface SkillCategory {
     skills: Skill[]
   }
   
-const Skills: React.FC = () => {
+const Skills: React.FC = ({forEmployers}) => {
+
     const skillCategories: SkillCategory[] = [
         {
             name: "Backend",
@@ -128,10 +130,6 @@ const Skills: React.FC = () => {
                 },
                 {
                     "name": " S3",
-                    "proficiency": 100
-                },
-                {
-                    "name": " etc.)",
                     "proficiency": 100
                 },
                 {

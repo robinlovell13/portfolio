@@ -13,7 +13,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className={"bg-transparent border-2 border-white p-4 rounded relative"}>
+    <div className={"bg-transparent border-2 border-white p-4 rounded-lg relative"}>
       {project.link && (<Link
         href={project.link || "#"}
         target="_blank"

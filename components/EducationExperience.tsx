@@ -15,7 +15,8 @@ interface Project {
     title: string
     team?: string[]
     description: string,
-    link?: string
+    link?: string,
+    year?: number
   }
   
 
@@ -33,7 +34,8 @@ const Education: React.FC = () => {
                     title: "2020 US Election Tweet Analysis",
                     team: ["Alain Duplan", "Harshul Shukla"],
                     description: "- Built an interactive visualization tool with D3, JavaScript, HTML, and CSS that enables users to explore the political leanings of tweets posted in the months before the election. \n\n- Used R to clean and analyze 865 MB data set containing nearly two million tweets. \n\n- Employed principles of effective visualization design to answer the question: “Could tweets be used to predict the election’s outcome?",
-                    link: "https://rmlovell.github.io/2020ElectionAnalysis/tweets_map.html"
+                    link: "https://rmlovell.github.io/2020ElectionAnalysis/tweets_map.html",
+                    year: 2021
                 },
             ],
         }

@@ -3,7 +3,7 @@
 import type React from "react"
 import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
-import { ChevronDown, ChevronUp } from "lucide-react"
+import { ChevronDown, ChevronUp, ExternalLink } from "lucide-react"
 
 const MoreMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -29,7 +29,7 @@ const MoreMenu: React.FC = () => {
         {isOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
       </button>
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-black rounded-md shadow-lg py-1 z-20">
+        <div className="absolute right-0 mt-2 w-48 bg-black rounded-lg shadow-lg py-1 z-20">
              <a href="#about" className="hover:bg-gray-800 block px-4 py-2 text-sm ">
             About
           </a>

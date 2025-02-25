@@ -31,7 +31,7 @@ const Recommendations = () => {
             <div className="bg-transparent rounded-lg">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {Recommendations.map((reference, index) => (
-                        <div key={index} className="bg-transparent border-2 border-white p-4 rounded hover:bg-gray-800 hover:border-gray-300">
+                        <div key={index} className="bg-transparent border-2 border-white p-4 rounded-lg hover:bg-gray-800 hover:border-gray-300">
                             <h3 className="text-xl mb-2">{reference.name}</h3>
                             <h4 className="text-md mb-2">{reference.position}</h4>
                             <h4 className="text-md mb-2">{reference.relation} at {reference.company}</h4>
