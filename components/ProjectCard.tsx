@@ -3,10 +3,18 @@ import { ExternalLink } from "lucide-react"
 import Link from "next/link"
 interface Project {
   title: string
-  link?: string
+  team?: string[]
   description: string
+  currentProgress?: number,
+  currentTask?: string,
+  isActive?: boolean,
+  total?: number,
+  label?: string,
+  status?: "To Do" | "In Progress" | "Done",
+  startDate?: Date,
+  endDate?: Date,
+  link?: string
 }
-
 interface ProjectCardProps {
   project: Project
 }
@@ -18,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         href={project.link || "#"}
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute top-2 right-2 text-gray-400 hover:text-white"
+        className={`absolute ${project.isActive ? "top-7": "top-2"} right-2 text-gray-400 hover:text-white`}
       >
         <ExternalLink size={16} />
       </Link>)}

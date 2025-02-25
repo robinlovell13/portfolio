@@ -32,7 +32,7 @@ const CurrentActivities = () => {
     {
       name: "Personal",
       projects: [
-        { title: "Personal Website", description: "Central repository for my creative and professional endeavors", startDate: new Date(2025, 1), isActive: true, currentTask: "Improve UX on mobile; fix skills section", status: "In Progress" },
+        { title: "Personal Website", description: "Central repository for my creative and professional endeavors", link: "https://github.com/robinlovell13/portfolio", startDate: new Date(2025, 1), isActive: true, currentTask: "Improve UX on mobile; fix skills section", status: "In Progress" },
         { title: "From-To Clone", description: "Free-to-use version of the From-To app", startDate: new Date(2024, 11), team: ["Jeffrey Torres", "me"], status: "In Progress", currentTask: "Deploy" },
         { title: "Daily Tracker", description: "Personal wellbeing tracker", startDate: new Date(2023, 8), endDate: new Date(2023, 11), status: "In Progress", currentTask: "Add auth and deploy" },
         { title: "Kaella Makeup Store POC", description: "Simple ecommerce website POC for a Peruvian small business", startDate: new Date(2023, 5), endDate: new Date(2023, 8), status: "Done", link: "https://kaella-eta.vercel.app/" },
@@ -85,7 +85,7 @@ const CurrentActivities = () => {
           href={project.link || "#"}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute top-2 right-2 text-gray-400 hover:text-white"
+          className={`absolute ${project.isActive ? "top-7": "top-2"} absolute right-2 text-gray-400 hover:text-white`}
         >
           <ExternalLink size={16} />
         </Link>}
