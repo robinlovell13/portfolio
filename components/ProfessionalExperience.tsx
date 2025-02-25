@@ -21,27 +21,11 @@ interface Project {
 const ProfessionalExperience: React.FC = () => {
   const experiences: Experience[] = [
     {
-      company: "Common Crow",
-      position: "Data Manager and Web Developer",
-      fromDate: "February 2024",
-      toDate: "Present",
-      description: "- Manage inventory and sales data utilizing Excel and ECRS Catapult, maintaining accuracy and efficiency in tracking product movements and sales trends. \n\n- Document business processes and conduct training sessions to facilitate adoption of processes. \n\n- Develop company website according to owners' style and feature preferences and synchronize content with external social media and job postings.",
-      projects: [
-        {
-          title: "Common Crow Website",
-          description: "Develop and maintain company website",
-          link: "http://www.commoncrow.com/",
-          year: 2025
-        }
-      ]
-      
-    },
-    {
       company: "Perficient",
       position: "Associate Software Engineer Consultant",
       fromDate: "January 2022",
       toDate: "March 2023",
-      description: "Worked directly with Fortune 500 clients in Agile environment to develop technical solutions for business needs",
+      description: "Worked directly with Fortune 500 clients to develop technical solutions in an Agile environment",
       projects: [
         {
           title: "Amazon Connect Disaster Recovery Tool",
@@ -61,12 +45,29 @@ const ProfessionalExperience: React.FC = () => {
         },
        
       ],
-    }
+    },
+    {
+      company: "Common Crow",
+      position: "Data Manager and Web Developer",
+      fromDate: "February 2024",
+      toDate: "Present",
+      description: "- Manage inventory and sales data utilizing Excel and ECRS Catapult, maintaining accuracy and efficiency in tracking product movements and sales trends. \n\n- Document business processes and conduct training sessions to facilitate adoption of processes. \n\n- Develop company website according to owners' style and feature preferences and synchronize content with external social media and job postings.",
+      projects: [
+        {
+          title: "Common Crow Website",
+          description: "Develop and maintain company website",
+          link: "http://www.commoncrow.com/",
+          year: 2025
+        }
+      ]
+      
+    },
+    
   ]
 
   return (
     <section id="professional-experience" className="min-h-screen py-16">
-      <h2 className="text-3xl mb-12 text-center">Professional Experience</h2>
+      <h2 className="text-3xl mb-12 text-center">Experience</h2>
       <div className="space-y-12">
         {experiences.map((experience, index) => (
           <ExperienceEntry key={index} experience={experience} />

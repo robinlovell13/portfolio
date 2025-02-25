@@ -26,18 +26,17 @@ export default function Home() {
                     <section id="home" className="min-h-screen flex flex-col items-center justify-center">
                         <div className="text-center">
                             <h1 className="text-4xl mb-4">Lovell Creations</h1>
-                            <p className="text-xl">Web Solutions | Custom LLMs | Software Engineering</p>
+                            <p className="text-xl">Contact Centers | Custom LLMs | Websites</p>
                         </div>
                         <a href="#contact" className="text-center text-xl mt-48 underline hover:bg-gray-800 cta-button rounded-lg">
                             Offering <span className="text-green-500">FREE</span> development services to 3 clients! Let's connect.
                         </a>
                     </section>}
 
-
-                <CurrentActivities />
                 <ProfessionalExperience />
-                <Education />
                 <Recommendations />
+                <CurrentActivities />
+                <Education />
                 <Skills forEmployers={forEmployers}/>
                 <About />
                 <Contact />

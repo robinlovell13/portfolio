@@ -11,9 +11,13 @@ export interface SkillCategory {
     skills: Skill[]
   }
   
-const Skills: React.FC = ({forEmployers}) => {
+  interface SkillsProps {
+    forEmployers: boolean;
+}
 
-    const skillCategories: SkillCategory[] = [
+const Skills: React.FC<SkillsProps> = ({ forEmployers }) => {
+
+    const skillCategories: SkillCategory[] = forEmployers ? [
         {
             name: "Backend",
             skills: [
@@ -23,39 +27,39 @@ const Skills: React.FC = ({forEmployers}) => {
                     "proficiency": 100
                 },
                 {
-                    "name": " RESTful APIs",
+                    "name": "RESTful APIs",
                     "proficiency": 100
                 },
                 {
-                    "name": " JSON",
+                    "name": "JSON",
                     "proficiency": 100
                 },
                 {
-                    "name": " PostgreSQL",
+                    "name": "PostgreSQL",
                     "proficiency": 100
                 },
                 {
-                    "name": " NoSQL",
+                    "name": "NoSQL",
                     "proficiency": 100
                 },
                 {
-                    "name": " MongoDB",
+                    "name": "MongoDB",
                     "proficiency": 100
                 },
                 {
-                    "name": " Node.js",
+                    "name": "Node.js",
                     "proficiency": 100
                 },
                 {
-                    "name": " Python",
+                    "name": "Python",
                     "proficiency": 100
                 },
                 {
-                    "name": " Express.js",
+                    "name": "Express.js",
                     "proficiency": 100
                 },
                 {
-                    "name": " GraphQL",
+                    "name": "GraphQL",
                     "proficiency": 100
                 },
                 {
@@ -68,96 +72,88 @@ const Skills: React.FC = ({forEmployers}) => {
             name: "Frontend",
             skills: [
                 {
-                    "name": "  JavaScript",
+                    "name": "JavaScript",
                     "proficiency": 100
                 },
                 {
-                    "name": " React",
+                    "name": "React",
                     "proficiency": 100
                 },
                 {
-                    "name": " TypeScript",
+                    "name": "TypeScript",
                     "proficiency": 100
                 },
                 {
-                    "name": " Flutter",
+                    "name": "Flutter",
                     "proficiency": 100
                 },
                 {
-                    "name": " Dart",
+                    "name": "Dart",
                     "proficiency": 100
                 },
                 {
-                    "name": " SvelteKit",
+                    "name": "SvelteKit",
                     "proficiency": 100
                 },
                 {
-                    "name": " ES6",
+                    "name": "ES6",
                     "proficiency": 100
                 },
                 {
-                    "name": " HTML",
+                    "name": "HTML",
                     "proficiency": 100
                 },
                 {
-                    "name": " CSS",
+                    "name": "CSS",
                     "proficiency": 100
                 },
                 {
-                    "name": " Sass Scripting",
+                    "name": "Sass Scripting",
                     "proficiency": 100
                 },
                 {
-                    "name": " D3.js",
+                    "name": "D3.js",
                     proficiency: 100
                 }
             ]
         },
         {
-            name: " Cloud and DevOps",
+            name: "Cloud and DevOps",
             skills: [
                 {
                     name: "Git",
                     "proficiency": 100
                 },
                 {
-                    "name": " AWS (DynamoDB",
+                    "name": "AWS",
                     "proficiency": 100
                 },
                 {
-                    "name": " Lambda",
+                    "name": "GitLab",
                     "proficiency": 100
                 },
                 {
-                    "name": " S3",
+                    "name": "Azure DevOps",
                     "proficiency": 100
                 },
                 {
-                    "name": " GitLab",
+                    "name": "Docker",
                     "proficiency": 100
                 },
                 {
-                    "name": " Azure DevOps",
+                    "name": "Cloud Native Architectures",
                     "proficiency": 100
                 },
                 {
-                    "name": " Docker",
+                    "name": "CI/CD Pipelines",
                     "proficiency": 100
                 },
                 {
-                    "name": " Cloud Native Architectures",
+                    "name": "Jira",
                     "proficiency": 100
                 },
                 {
-                    "name": " CI/CD Pipelines",
-                    "proficiency": 100
-                },
-                {
-                    "name": " Jira",
-                    "proficiency": 100
-                },
-                {
-                    "name": " Vercel",
+                    "name": "Vercel",
                     proficiency: 100
                 }
 
@@ -171,53 +167,284 @@ const Skills: React.FC = ({forEmployers}) => {
                     "proficiency": 100
                 },
                 {
-                    "name": " Windows",
+                    "name": "Windows",
                     "proficiency": 100
                 },
                 {
-                    "name": " Linux",
+                    "name": "Linux",
                     "proficiency": 100
                 },
                 {
-                    "name": " JUnit",
+                    "name": "JUnit",
                     "proficiency": 100
                 },
                 {
-                    "name": " Bash",
+                    "name": "Bash",
                     "proficiency": 100
                 },
                 {
-                    "name": " Agile Scrum Development Practices",
+                    "name": "Agile Scrum Development Practices",
                     "proficiency": 100
                 },
                 {
-                    "name": " Amazon Connect",
+                    "name": "Amazon Connect",
                     "proficiency": 100
                 },
                 {
-                    "name": " Twilio",
+                    "name": "Twilio",
                     "proficiency": 100
                 },
                 {
-                    "name": " R",
+                    "name": "R",
                     "proficiency": 100
                 },
                 {
-                    "name": " Machine Learning Algorithms",
+                    "name": "Machine Learning Algorithms",
                     "proficiency": 100
                 },
                 {
-                    "name": " Statistical Analysis",
+                    "name": "Statistical Analysis",
                     "proficiency": 100
                 },
                 {
-                    "name": " Generative AI",
+                    "name": "Generative AI",
                     "proficiency": 100
                 }
 
             ]
         }
+    ] : 
+    // For clients
+    [ {
+        name: "Contact Center Technologies",
+        skills: [{
+            "name": "Amazon Connect",
+            "proficiency": 100
+        },
+        {
+            "name": "Twilio",
+            "proficiency": 100
+        },]
+        },
+        {
+            name: "AI",
+            skills: [{
+                "name": "Custom LLMs",
+                "proficiency": 100
+            },
+            {
+                "name": "ChatGPT API",
+                "proficiency": 100
+            },
+            {
+                "name": "PyTorch",
+                "proficiency": 100
+            }
+            ]
+            },
+            {
+                name: "Cloud and DevOps",
+                skills: [
+                    {
+                        "name": "Amazon Web Services (AWS)",
+                        "proficiency": 100
+                    },
+                    {
+                        name: "Git",
+                        "proficiency": 100
+                    },
+                    {
+                        "name": "GitLab",
+                        "proficiency": 100
+                    },
+                    {
+                        "name": "Docker",
+                        "proficiency": 100
+                    },
+                    {
+                        "name": "Vercel",
+                        "proficiency": 100
+                    },
+                    {
+                        "name": "Cloud Native Architectures",
+                        "proficiency": 100
+                    },
+                    {
+                        "name": "CI/CD Pipelines",
+                        "proficiency": 100
+                    },
+                ]
+            },
+        {
+            name: "App and Web Development",
+            skills: [
+               {
+                    "name": "Java",
+                    "proficiency": 30
+                },
+                {   "name": "VB .NET",
+                    "proficiency": 30 }, 
+                {
+                    "name": "RESTful APIs",
+                    "proficiency": 100
+                },
+                {
+                    "name": "JSON",
+                    "proficiency": 100
+                },
+                {
+                    "name": "PostgreSQL",
+                    "proficiency": 100
+                },
+                {
+                    "name": "NoSQL",
+                    "proficiency": 100
+                },
+                {
+                    "name": "MongoDB",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Node.js",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Python",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Express.js",
+                    "proficiency": 100
+                },
+                {
+                    "name": "GraphQL",
+                    "proficiency": 100
+                },
+                {
+                    name: "Object-Oriented Programming",
+                    proficiency: 100
+                },
+                {
+                    name: "HTTP",
+                    "proficiency": 100
+                },
+                {
+                    "name": "JavaScript",
+                    "proficiency": 100
+                },
+                {
+                    "name": "React",
+                    "proficiency": 100
+                },
+                {
+                    "name": "TypeScript",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Flutter",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Dart",
+                    "proficiency": 100
+                },
+                {
+                    "name": "SvelteKit",
+                    "proficiency": 100
+                },
+                {
+                    "name": "ES6",
+                    "proficiency": 100
+                },
+                {
+                    "name": "HTML",
+                    "proficiency": 100
+                },
+                {
+                    "name": "CSS",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Syntactically Awesome Style Sheets (SASS)",
+                    "proficiency": 100
+                },  
+                {
+                    "name": "Bash",
+                    "proficiency": 100
+                },
+            ]
+        },
+        {
+            name: "Project Management",
+            skills: [
+                {
+                    "name": "Jira",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Azure DevOps",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Agile Scrum Development Practices",
+                    "proficiency": 100
+                },
+            ]
+        },
+        {
+            name: "Data Science",
+            skills: [
+                {
+                    "name": "R",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Machine Learning Algorithms",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Statistical Analysis",
+                    "proficiency": 100
+                },
+                {
+                    "name": "D3.js",
+                    "proficiency": 100
+                }
+            ]
+        },
+        
+        { name: "Testing",
+            skills: [
+                {
+                    "name": "JUnit",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Playwright",
+                    "proficiency": 100
+                },
+            ]
+        },
+        { name: "Operating Systems",
+            skills: [
+                {
+                    "name": "Windows",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Linux",
+                    "proficiency": 100
+                },
+                {
+                    "name": "MacOS",
+                    "proficiency": 100
+                },
+                
+            ]
+        },
+        
     ]
+
 
     return (
         <section id="skills" className="min-h-screen py-16">

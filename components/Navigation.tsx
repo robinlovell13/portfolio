@@ -19,14 +19,15 @@ const Navigation = ({forEmployers, setForEmployers}) => {
         </button>
       </div>
       <div className="hidden md:flex justify-center text-white items-center flex-grow space-x-6">
-       <a href="#projects" className="hover:bg-gray-800">
-            Projects
-          </a>
+     
           <a href="#professional-experience" className="hover:bg-gray-800">
             Experience
           </a>
           <a href="#recommendations" className="hover:bg-gray-800 hidden lg:flex">
             Recommendations
+          </a>
+          <a href="#projects" className="hover:bg-gray-800">
+            Projects
           </a>
         </div>
         <div className="flex items-center">
