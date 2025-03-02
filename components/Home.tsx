@@ -8,10 +8,18 @@ import CompletedProjects from "../components/CompletedProjects"
 import ProfessionalExperience from "../components/ProfessionalExperience"
 import Education from "../components/EducationExperience"
 import Skills from "../components/Skills"
-import { useState } from "react";
+import { useState, useEffect  } from "react";
+import { useSearchParams } from "next/navigation";
 
-export default function Home() {
+export default function Home() { 
+    const searchParams = useSearchParams();
     const [forEmployers, setForEmployers] = useState(false);
+
+    useEffect(() => {
+        setForEmployers(searchParams.has("forEmployers"));
+    }, [searchParams]);
+
+
     return (
         <main >
             <Navigation forEmployers={forEmployers} setForEmployers={setForEmployers} />
