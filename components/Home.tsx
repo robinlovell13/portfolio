@@ -33,7 +33,7 @@ export default function Home() {
                 </section> :
                     <section id="home" className="min-h-screen flex flex-col items-center justify-center">
                         <div className="text-center">
-                            <h1 className="text-4xl mb-4">Lovell Creations</h1>
+                            <h1 className="text-4xl mb-4">Lovell Solutions</h1>
                             <p className="text-xl">Custom AI | Contact Centers | Automations | Web Magic</p>
                         </div>
                         <a href="#contact" className="text-center text-xl mt-48 underline hover:bg-gray-800 cta-button rounded-lg">
