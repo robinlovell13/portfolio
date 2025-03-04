@@ -29,6 +29,9 @@ const Navigation = ({forEmployers, setForEmployers}) => {
           <a href="#projects" className="hover:bg-gray-800">
             Projects
           </a>
+          <a href="/resume.pdf" className="hover:bg-gray-800">
+            Resume
+          </a>
         </div>
         <div className="flex items-center">
         <ViewToggle forEmployers={forEmployers} setForEmployers={setForEmployers} />
@@ -44,18 +47,8 @@ const Navigation = ({forEmployers, setForEmployers}) => {
               </Link>
             </li>
             <li>
-              <a href="#projects" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
-              Projects
-              </a>
-            </li>
-            <li>
               <a href="#professional-experience" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
               Experience
-              </a>
-            </li>
-            <li>
-              <a href="#education" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
-              Education
               </a>
             </li>
             <li>
@@ -63,6 +56,22 @@ const Navigation = ({forEmployers, setForEmployers}) => {
               Recommendations
               </a>
             </li>
+            <li>
+              <a href="#projects" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
+              Projects
+              </a>
+            </li>
+            <li>
+            <a href="/resume.pdf" className="hover:bg-gray-800">
+            Resume
+          </a>
+          </li>
+            <li>
+              <a href="#education" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
+              Education
+              </a>
+            </li>
+            
             <li>
               <a href="#about" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
               About
