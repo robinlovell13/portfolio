@@ -54,9 +54,9 @@ const CurrentActivities = ({ skillCategories }: { skillCategories: SkillCategory
       name: "Personal",
       projects: [
         { title: "Personal Website", skills: ["Next.js"], description: "Central repository for my creative and professional endeavors", link: "https://github.com/robinlovell13/portfolio", startDate: new Date(2025, 1), isActive: true, currentTask: "Add projects", status: "In Progress" },
-        { title: "Neighborhood Matcher", skills: ["OpenAI API", "Next.js", "Python", "Google Places API"], description: "Matches neighborhoods in two cities based on cultural, geographic, or socioeconomic relevance", startDate: new Date(2024, 11), image: "/images/neighborhood-matcher.png", link: "https://neighborhood-mapper-kappa.vercel.app/", team: ["Jeffrey Torres", "me"], status: "In Progress", currentTask: "Fix custom origin/destination feature" },
+        { title: "Neighborhood Matcher", skills: ["OpenAI API", "Next.js", "Python", "Google Places API"], description: "Matches neighborhoods in two cities based on cultural, geographic, or socioeconomic relevance", startDate: new Date(2024, 11), image: "/public/images/neighborhood-matcher.png", link: "https://neighborhood-mapper-kappa.vercel.app/", team: ["Jeffrey Torres", "me"], status: "In Progress", currentTask: "Fix custom origin/destination feature" },
         { title: "Daily Tracker", skills: [], description: "Personal wellbeing tracker", startDate: new Date(2023, 8), endDate: new Date(2023, 11), status: "In Progress", currentTask: "Add auth and deploy" },
-        { title: "Kaella Makeup Store POC", skills: [], image: "images/kaella.png",description: "Simple ecommerce website POC for a Peruvian small business that allows users to browse items and add to cart", startDate: new Date(2023, 5), endDate: new Date(2023, 8), status: "Done", link: "https://kaella-eta.vercel.app/" },
+        { title: "Kaella Makeup Store POC", skills: [], image: "/public/images/kaella.png",description: "Simple ecommerce website POC for a Peruvian small business that allows users to browse items and add to cart", startDate: new Date(2023, 5), endDate: new Date(2023, 8), status: "Done", link: "https://kaella-eta.vercel.app/" },
         { title: "Kubernetes", skills: [], description: "Kubernetes open-source project", currentProgress: 0, total: 100, status: "To Do" },
       ],
     },
