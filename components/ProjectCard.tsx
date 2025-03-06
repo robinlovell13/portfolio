@@ -1,6 +1,8 @@
 import type React from "react"
 import { ExternalLink } from "lucide-react"
 import Link from "next/link"
+import ProjectSkill from "./ProjectSkill"
+
 interface Project {
   title: string
   team?: string[]
@@ -14,6 +16,7 @@ interface Project {
   startDate?: Date,
   endDate?: Date,
   link?: string
+  skills: string[]
 }
 interface ProjectCardProps {
   project: Project
@@ -32,6 +35,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </Link>)}
       <h6 className="text-lg font-semibold mb-2">{project.title}</h6>
       <p className="text-sm whitespace-pre-line">{project.description}</p>
+      <div className="flex flex-wrap gap-2 mb-2">
+                    {project.skills.map((skill, skillIndex) => (
+                      <ProjectSkill skill={skill} key={skillIndex}/>
+                    ))}
+                  </div>
     </div>
   )
 }

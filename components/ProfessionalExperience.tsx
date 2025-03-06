@@ -13,7 +13,7 @@ interface Experience {
 interface Project {
   title: string
   team?: string[]
-  description: string
+  skills: [], description: string
   link?: string,
   year?: number
 }
@@ -29,21 +29,21 @@ const ProfessionalExperience: React.FC = () => {
       projects: [
         {
           title: "Amazon Connect Disaster Recovery Tool",
-          description: "- Engineered a scalable, cloud-native disaster recovery solution for Amazon Connect cloud contact centers, generating approximately $2-5 million in revenue and averting potential client outages. \n\n- Made key technical decisions, rigorously tested and resolved critical bugs, and refactored to decrease runtime and complexity by 10X, leading to project success. \n\n- Conducted daily Scrum meetings with a cross-functional development team and client, accurately scoping work, communicating progress, and adapting to client needs and evolving project demands.",
+          skills: [], description: "- Engineered a scalable, cloud-native disaster recovery solution for Amazon Connect cloud contact centers, generating approximately $2-5 million in revenue and averting potential client outages. \n\n- Made key technical decisions, rigorously tested and resolved critical bugs, and refactored to decrease runtime and complexity by 10X, leading to project success. \n\n- Conducted daily Scrum meetings with a cross-functional development team and client, accurately scoping work, communicating progress, and adapting to client needs and evolving project demands.",
           year: 2022
         },
         {
           title: "Multi-channel Messaging Application Proof of Concept",
-          description: "- Developed proof of concept to demonstrate secure, multi-channel messaging functionality between administrators, financial advisors, and clients. \n\n- Rapidly upskilled in GraphQL and AWS AppSync to develop data models and achieve real-time data sync, replacing WebSockets; debugged the user interface using Flutter and Dart, and integrated MS Teams, meeting key project milestones. \n\n- Presented live demos to highlight features and value to stakeholders.",
+          skills: [], description: "- Developed proof of concept to demonstrate secure, multi-channel messaging functionality between administrators, financial advisors, and clients. \n\n- Rapidly upskilled in GraphQL and AWS AppSync to develop data models and achieve real-time data sync, replacing WebSockets; debugged the user interface using Flutter and Dart, and integrated MS Teams, meeting key project milestones. \n\n- Presented live demos to highlight features and value to stakeholders.",
           year: 2023
         },
         {
           title: "IVR-to-Flowchart Tool",
-          description: "- Created a tool using JavaScript and Mermaid to transform complex contact center workflows into clear, visually distinct flowcharts. \n\n- Enhanced client understanding and interaction with these flows and reduced labor required for generating project documentation. \n\n- Authored an in-depth blog post on the tool, showcasing the company's innovative services and driving client acquisition.",
+          skills: [], description: "- Created a tool using JavaScript and Mermaid to transform complex contact center workflows into clear, visually distinct flowcharts. \n\n- Enhanced client understanding and interaction with these flows and reduced labor required for generating project documentation. \n\n- Authored an in-depth blog post on the tool, showcasing the company's innovative services and driving client acquisition.",
           link: "https://blogs.perficient.com/2023/03/07/ivr-to-flowchart-tool/",
           year: 2023
         },
-       
+
       ],
     },
     {
@@ -55,14 +55,14 @@ const ProfessionalExperience: React.FC = () => {
       projects: [
         {
           title: "Common Crow Website",
-          description: "Develop and maintain company website",
+          skills: [], description: "Develop and maintain company website",
           link: "http://www.commoncrow.com/",
           year: 2025
         }
       ]
-      
+
     },
-    
+
   ]
 
   return (

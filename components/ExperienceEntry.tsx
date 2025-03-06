@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard"
 interface Project {
     title: string
     team?: string[]
+    skills: string[]
     description: string
     link?: string
   }

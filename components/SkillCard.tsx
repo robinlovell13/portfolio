@@ -11,9 +11,9 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
   return (
     <Link href={`/skills/${encodeURIComponent(skill.name.toLowerCase())}`}>
       <div className="bg-transparent  p-4 rounded-lg cursor-pointer hover:bg-gray-800 transition-colors duration-200 ">
-      {skill.link ? (
+      {skill.image ? (
           <div className="h-12 mb-2 relative">
-            <Image src={skill.link || "/placeholder.svg"} alt={skill.name} layout="fill" objectFit="contain" />
+            <Image src={skill.image || "/placeholder.svg"} alt={skill.name} layout="fill" objectFit="contain" />
           </div>
         ) : (
           <h3 className="text-lg font-semibold mb-2">{skill.name}</h3>
