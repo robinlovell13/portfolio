@@ -578,10 +578,12 @@ export default function Home() {
                             Offering <span className="text-green-500">FREE</span> development services to 3 clients! Let's connect.
                         </a>
                     </section>}
-
-                <ProfessionalExperience />
-                <Recommendations />
+               
                 <CurrentActivities skillCategories = {skillCategories}/>
+                <Recommendations />
+                <ProfessionalExperience />
+               
+                
                 <Education />
                 <Skills skillCategories = {skillCategories} forEmployers={forEmployers}/>
                 <About />
