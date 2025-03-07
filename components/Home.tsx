@@ -558,6 +558,12 @@ export default function Home() {
         },
 
         ]
+        const skills: { [key: string]: string } = Object.fromEntries(
+            skillCategories.flatMap(category =>
+              category.skills.map(skill => [skill.name, skill.image])
+            )
+          );
+          
     return (
         <main >
             <Navigation forEmployers={forEmployers} setForEmployers={setForEmployers} />
@@ -579,12 +585,12 @@ export default function Home() {
                         </a>
                     </section>}
                
-                <CurrentActivities skillCategories = {skillCategories}/>
+                <CurrentActivities skills = {skills}/>
                 <Recommendations />
-                <ProfessionalExperience />
+                <ProfessionalExperience skills = {skills}/>
                
                 
-                <Education />
+                <Education skills = {skills}/>
                 <Skills skillCategories = {skillCategories} forEmployers={forEmployers}/>
                 <About />
                 <Contact />

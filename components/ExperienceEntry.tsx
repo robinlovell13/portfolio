@@ -20,9 +20,10 @@ interface Experience {
 
 interface ExperienceEntryProps {
   experience: Experience
+  skills: { [key: string]: string }
 }
 
-const ExperienceEntry: React.FC<ExperienceEntryProps> = ({ experience }) => {
+const ExperienceEntry: React.FC<ExperienceEntryProps> = ({ experience, skills }) => {
   return (
     <div className="bg-transparent border-2 border-white py-6 rounded-lg">
       <div className="mb-4">
@@ -38,7 +39,7 @@ const ExperienceEntry: React.FC<ExperienceEntryProps> = ({ experience }) => {
           <h5 className="text-lg font-semibold mb-2 mx-4">Key Projects:</h5>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:mx-4">
             {experience.projects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
+              <ProjectCard key={index} project={project} skills ={skills}/>
             ))}
           </div>
         </div>

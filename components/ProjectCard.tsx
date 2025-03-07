@@ -20,9 +20,10 @@ interface Project {
 }
 interface ProjectCardProps {
   project: Project
+  skills: { [key: string]: string }
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ project, skills }) => {
   return (
     <div className={"bg-transparent border-2 border-white p-4 rounded-lg relative"}>
       {project.link && (<Link
@@ -34,12 +35,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <ExternalLink size={16} />
       </Link>)}
       <h6 className="text-lg font-semibold mb-2">{project.title}</h6>
+      <div className="flex flex-wrap gap-x-2 gap-y-2 mb-2">
+        {project.skills.map((skill, skillIndex) => (
+          <ProjectSkill
+          skill={skill}
+          image={skills[skill] || ""}
+          key={skillIndex}
+        />
+        ))}
+      </div>
       <p className="text-sm whitespace-pre-line">{project.description}</p>
-      <div className="flex flex-wrap gap-2 mb-2">
-                    {project.skills.map((skill, skillIndex) => (
-                      <ProjectSkill skill={skill} key={skillIndex}/>
-                    ))}
-                  </div>
+      
     </div>
   )
 }

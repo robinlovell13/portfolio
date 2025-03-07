@@ -42,21 +42,17 @@ export interface SkillCategory {
 const formatDate = (date: Date | undefined): string => {
   return date ? date.toLocaleDateString("en-US", { year: "numeric", month: "short" }) : ""
 }
-const CurrentActivities = ({ skillCategories }: { skillCategories: SkillCategory[] }) => {
+const CurrentActivities = ({ skills }: { skills: { [key: string]: string } }) => {
   
-    const skills = Object.fromEntries(
-      skillCategories.flatMap(category =>
-        category.skills.map(skill => [skill.name, skill.image])
-      )
-    );
+
   const categories: Category[] = [
     {
-      name: "Personal",
+      name: "Personal Projects",
       projects: [
-        { title: "Personal Website", skills: ["Next.js"], description: "Central repository for my creative and professional endeavors", link: "https://github.com/robinlovell13/portfolio", startDate: new Date(2025, 1), isActive: true, currentTask: "Add projects", status: "In Progress" },
-        { title: "Neighborhood Matcher", skills: ["OpenAI API", "Next.js", "Python", "Google Places API"], description: "Matches neighborhoods in two cities based on cultural, geographic, or socioeconomic relevance", startDate: new Date(2024, 11), image: "/images/neighborhood-matcher.PNG", link: "https://neighborhood-mapper-kappa.vercel.app/", team: ["Jeffrey Torres", "me"], status: "In Progress", currentTask: "Fix custom origin/destination feature" },
-        { title: "Daily Tracker", skills: [], description: "Personal wellbeing tracker", startDate: new Date(2023, 8), endDate: new Date(2023, 11), status: "In Progress", currentTask: "Add auth and deploy" },
-        { title: "Kaella Makeup Store POC", skills: [], image: "images/kaella.PNG",description: "Simple ecommerce website POC for a Peruvian small business that allows users to browse items and add to cart", startDate: new Date(2023, 5), endDate: new Date(2023, 8), status: "Done", link: "https://kaella-eta.vercel.app/" },
+        { title: "Neighborhood Matcher", skills: ["Next.js", "Tailwind CSS", "Python", "OpenAI API", "Google Places API"], description: "Matches neighborhoods in two cities based on cultural, geographic, or socioeconomic relevance", startDate: new Date(2024, 11), image: "/images/neighborhood-matcher.PNG", link: "https://neighborhood-mapper-kappa.vercel.app/", team: ["Jeffrey Torres", "me"], status: "In Progress", currentTask: "Fix custom origin/destination feature" },
+        { title: "Personal Website", skills: ["Next.js", "Tailwind CSS"], description: "Central repository for my creative and professional endeavors", link: "https://github.com/robinlovell13/portfolio", startDate: new Date(2025, 1), currentTask: "Add projects", status: "In Progress" },
+        { title: "Daily Tracker", skills: ["SvelteKit", "JavaScript", "AWS"], description: "Personal wellbeing tracker", startDate: new Date(2023, 8), endDate: new Date(2023, 11), status: "In Progress", currentTask: "Add auth and deploy" },
+        { title: "Kaella Makeup Store POC", skills: ["SvelteKit", "JavaScript", "AWS", "Azure DevOps"], image: "images/kaella.PNG",description: "Simple ecommerce website POC for a Peruvian small business that allows users to browse items and add to cart", startDate: new Date(2023, 5), endDate: new Date(2023, 8), status: "Done", link: "https://kaella-eta.vercel.app/" },
         { title: "Kubernetes", skills: [], description: "Kubernetes open-source project", currentProgress: 0, total: 100, status: "To Do" },
       ],
     },
@@ -70,6 +66,7 @@ const CurrentActivities = ({ skillCategories }: { skillCategories: SkillCategory
 
       ],
     },
+   
     {
       name: "Activities and Interests",
       projects: [
@@ -121,7 +118,7 @@ const CurrentActivities = ({ skillCategories }: { skillCategories: SkillCategory
       </div>
     )}
      <div className="flex flex-wrap gap-x-2 gap-y-2 mb-2">
-        {project.skills.map((skill, skillIndex) => (
+        {project.skills.map((skill: string, skillIndex) => (
           <ProjectSkill
           skill={skill}
           image={skills[skill] || ""}

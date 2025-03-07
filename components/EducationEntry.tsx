@@ -6,6 +6,7 @@ interface Project {
     team?: string[]
     description: string
     link?: string
+    skills: string[]
   }
   
 interface Education {
@@ -20,9 +21,10 @@ interface Education {
 
 interface EducationEntryProps {
   education: Education
+  skills: { [key: string]: string }
 }
 
-const EducationEntry: React.FC<EducationEntryProps> = ({ education }) => {
+const EducationEntry: React.FC<EducationEntryProps> = ({ education, skills }) => {
   return (
     <div className="bg-transparent border-2 border-white py-6 rounded-lg">
       <div className="mb-4">
@@ -38,7 +40,8 @@ const EducationEntry: React.FC<EducationEntryProps> = ({ education }) => {
           <h5 className="text-lg font-semibold mb-2 mx-4">Key Projects:</h5>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:mx-4">
             {education.projects.map((project, index) => (
-              <ProjectCard key={index} project={project}/>
+              <ProjectCard key={index} project={project} skills={skills}
+            />
             ))}
           </div>
         </div>

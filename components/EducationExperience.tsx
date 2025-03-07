@@ -15,13 +15,17 @@ interface Project {
     title: string
     team?: string[]
     description: string,
-    skills: string[],
+    skills: string[]
     link?: string,
     year?: number
   }
   
-
-const Education: React.FC = () => {
+  export interface Skill {
+    name: string
+    image: string,
+    proficiency: number 
+  }
+const Education = ({ skills }: { skills: { [key: string]: string } }) => {
     const educationExperiences: Education[] = [
         {
             school: "University of Massachusetts Amherst",
@@ -47,7 +51,7 @@ const Education: React.FC = () => {
             <h2 className="text-3xl mb-12 text-center">Education</h2>
             <div className="space-y-12">
                 {educationExperiences.map((education, index) => (
-                    <EducationEntry key={index} education={education} />
+                    <EducationEntry key={index} education={education} skills = {skills}/>
                 ))}
             </div>
         </section>
