@@ -20,20 +20,22 @@ const Navigation = ({ forEmployers, setForEmployers }) => {
         </div>
         <div className="hidden md:flex justify-center text-white items-center flex-grow space-x-6">
 
-          <a href="#professional-experience" className="hover:bg-gray-800">
-            Experience
+          
+          <a href="#projects" className="hover:bg-gray-800">
+            Projects
           </a>
           <a href="#recommendations" className="hover:bg-gray-800 hidden lg:flex">
             Recommendations
           </a>
-          <a href="#projects" className="hover:bg-gray-800">
-            Projects
+          <a href="#professional-experience" className="hover:bg-gray-800">
+            Experience
           </a>
+          
           <a href="/resume.pdf" className="hover:bg-gray-800">
             Resume
           </a>
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/robinlovell-12"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-white"
@@ -41,7 +43,7 @@ const Navigation = ({ forEmployers, setForEmployers }) => {
             <Linkedin size={20} />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/robinlovell13"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-white"
@@ -64,18 +66,19 @@ const Navigation = ({ forEmployers, setForEmployers }) => {
               </Link>
             </li>
             <li>
-              <a href="#professional-experience" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
-                Experience
+              <a href="#projects" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
+                Projects
               </a>
             </li>
+            
             <li>
               <a href="#recommendations" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
                 Recommendations
               </a>
             </li>
             <li>
-              <a href="#projects" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
-                Projects
+              <a href="#professional-experience" className="block py-2 hover:bg-gray-800" onClick={() => setIsMenuOpen(false)}>
+                Experience
               </a>
             </li>
             <li>

@@ -16,6 +16,7 @@ interface Project {
   skills: string[], description: string
   link?: string,
   year?: number
+  image?: string
 }
 export interface Skill {
   name: string
@@ -45,6 +46,7 @@ const ProfessionalExperience = ({ skills }: { skills: { [key: string]: string } 
           title: "IVR-to-Flowchart Tool",
           skills: ["JavaScript", "Mermaid Charting Tool"], description: "- Created a tool using JavaScript and Mermaid to transform complex contact center workflows into clear, visually distinct flowcharts. \n\n- Enhanced client understanding and interaction with these flows and reduced labor required for generating project documentation. \n\n- Authored an in-depth blog post on the tool, showcasing the company's innovative services and driving client acquisition.",
           link: "https://blogs.perficient.com/2023/03/07/ivr-to-flowchart-tool/",
+          image: "/images/IVR-to-Flowchart.PNG",
           year: 2023
         },
 
@@ -62,6 +64,7 @@ const ProfessionalExperience = ({ skills }: { skills: { [key: string]: string } 
           skills: ["Weebly", "Photoshop", "CSS"],
           description: "Develop and maintain company website",
           link: "http://www.commoncrow.com/",
+          image: "/images/commoncrow.PNG",
           year: 2025
         }
       ]

@@ -112,6 +112,10 @@ export default function Home() {
                     "image": "https://www.vectorlogo.zone/logos/nextjs/nextjs-ar21~bgwhite.svg",
                     "proficiency": 80
                 },
+                {   "name": "Tailwind CSS",
+                    "image": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21~bgwhite.svg",
+                    "proficiency": 80
+                },
                 {
                     "name": "Flutter",
                     "image": "https://www.vectorlogo.zone/logos/flutterio/flutterio-ar21~bgwhite.svg",
@@ -201,7 +205,7 @@ export default function Home() {
                     "name": "Vercel",
                     "image": "https://www.vectorlogo.zone/logos/vercel/vercel-ar21~bgwhite.svg",
                     proficiency: 100
-                }
+                },
 
             ]
         },
@@ -350,6 +354,10 @@ export default function Home() {
             skills: [
                 {"name": "Next.js",
                     "image": "https://www.vectorlogo.zone/logos/nextjs/nextjs-ar21~bgwhite.svg",
+                    "proficiency": 80
+                },
+                {   "name": "Tailwind CSS",
+                    "image": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21~bgwhite.svg",
                     "proficiency": 80
                 },
                 {
@@ -567,7 +575,7 @@ export default function Home() {
     return (
         <main >
             <Navigation forEmployers={forEmployers} setForEmployers={setForEmployers} />
-            <div className="max-w-screen-xl mx-auto mt-24 sm:mt-0 px-1 sm:px-6 md:px-8">
+            <div className="max-w-screen-2xl mx-auto px-1 sm:px-6 md:px-8">
                 {forEmployers ? <section id="home" className="min-h-screen flex flex-col items-center justify-center">
                     <div className="text-center">
                         <h1 className="text-4xl mb-4">Robin Lovell</h1>
@@ -580,7 +588,7 @@ export default function Home() {
                             <h1 className="text-4xl mb-4">Lovell Solutions</h1>
                             <p className="text-xl">Custom AI | Contact Centers | Automations | Web Magic</p>
                         </div>
-                        <a href="#contact" className="text-center text-xl mt-48 underline hover:bg-gray-800 cta-button rounded-lg">
+                        <a href="#contact" className="text-center text-xl mt-12  underline hover:bg-gray-800 cta-button rounded-lg">
                             Offering <span className="text-green-500">FREE</span> development services to 3 clients! Let's connect.
                         </a>
                     </section>}

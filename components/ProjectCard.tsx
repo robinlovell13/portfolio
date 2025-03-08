@@ -16,6 +16,7 @@ interface Project {
   startDate?: Date,
   endDate?: Date,
   link?: string
+  image?: string
   skills: string[]
 }
 interface ProjectCardProps {
@@ -25,16 +26,24 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, skills }) => {
   return (
-    <div className={"bg-transparent border-2 border-white p-4 rounded-lg relative"}>
-      {project.link && (<Link
-        href={project.link || "#"}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`absolute ${project.isActive ? "top-7": "top-2"} right-2 text-gray-400 hover:text-white`}
-      >
-        <ExternalLink size={16} />
-      </Link>)}
+    <a
+    key={project.title}
+    href={project.link || "#"}
+    className={`bg-transparent border-2 rounded-lg p-4 relative pt-6 block
+      ${project.isActive ? "border-green-500" : "border-white"} 
+      ${project.link ? "cursor-pointer hover:bg-gray-800 transition-colors duration-200" : "cursor-default"}`}
+  >
+    
       <h6 className="text-lg font-semibold mb-2">{project.title}</h6>
+      {project.image && (
+      <div className="mb-4">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-40 object-cover rounded-lg"
+        />
+      </div>
+    )}
       <div className="flex flex-wrap gap-x-2 gap-y-2 mb-2">
         {project.skills.map((skill, skillIndex) => (
           <ProjectSkill
@@ -46,7 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, skills }) => {
       </div>
       <p className="text-sm whitespace-pre-line">{project.description}</p>
       
-    </div>
+    </a>
   )
 }
 

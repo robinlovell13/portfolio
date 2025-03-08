@@ -22,7 +22,6 @@ const CurrentActivitiesCategory: React.FC<CategoryProps> = ({ category }) => {
   const hasMoreProjects = category.projects.length > 4
 
   return (
-    
     <div className="bg-transparent border-2 border-white p-6 rounded-lg">
       <h3 className="text-2xl mb-4">{category.name}</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -46,7 +45,7 @@ const CurrentActivitiesCategory: React.FC<CategoryProps> = ({ category }) => {
         </div>
       )}
     </div>
-  )
+  );
 }
 
 export default CurrentActivitiesCategory

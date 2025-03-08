@@ -21,6 +21,6 @@ export default function CategoryPage({ params }: { params: { category: string } 
         This page will display all projects for the {params.category.replace(/-/g, " ")} category.
       </p>
     </div>
-  )
+  );
 }
 

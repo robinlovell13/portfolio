@@ -17,6 +17,7 @@ interface Project {
     description: string,
     skills: string[]
     link?: string,
+    image?: string,
     year?: number
   }
   
@@ -38,8 +39,9 @@ const Education = ({ skills }: { skills: { [key: string]: string } }) => {
                 {
                     title: "2020 US Election Tweet Analysis",
                     team: ["Alain Duplan", "Harshul Shukla"],
-                    skills: [], description: "- Built an interactive visualization tool with D3, JavaScript, HTML, and CSS that enables users to explore the political leanings of tweets posted in the months before the election. \n\n- Used R to clean and analyze 865 MB data set containing nearly two million tweets. \n\n- Employed principles of effective visualization design to answer the question: “Could tweets be used to predict the election’s outcome?",
+                    skills: ["D3.js", "Python", "RStudio"], description: "- Built an interactive visualization tool with D3, JavaScript, HTML, and CSS that enables users to explore the political leanings of tweets posted in the months before the election. \n\n- Used R to clean and analyze 865 MB data set containing nearly two million tweets. \n\n- Employed principles of effective visualization design to answer the question: “Could tweets be used to predict the election’s outcome?",
                     link: "https://rmlovell.github.io/2020ElectionAnalysis/tweets_map.html",
+                    image: "images/2020-US-Election.PNG",
                     year: 2021
                 },
             ],
