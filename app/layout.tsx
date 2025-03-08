@@ -11,8 +11,8 @@ const pixelFont = Chakra_Petch({
 })
 
 export const metadata = {
-  title: "Lovell Creations",
-  description: "Software Engineering | LLM Implementation | Web Solutions",
+  title: "Robin Lovell",
+  description: "Software Engineer",
 }
 
 export default function RootLayout({
