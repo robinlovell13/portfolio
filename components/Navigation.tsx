@@ -61,7 +61,7 @@ const Navigation = ({ forEmployers, setForEmployers }) => {
       </div>
 
       {isMenuOpen && (
-        <div className="mt-6 absolute right-0 mt-4 bg-black w-72">
+        <div className="mt-6 absolute right-0 mt-4 bg-black w-full sm:w-72">
           <ul className="flex flex-col space-y-2">
           <li>
           <div className="block py-2">
