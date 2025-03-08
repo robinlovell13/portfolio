@@ -3,6 +3,7 @@ import { Chakra_Petch } from "next/font/google"
 import StarryBackground from "../components/StarryBackground"
 import Navigation from "../components/Navigation"
 import type React from "react"
+import Head from "next/head";
 
 const pixelFont = Chakra_Petch({
   weight: "400",
@@ -13,6 +14,11 @@ const pixelFont = Chakra_Petch({
 export const metadata = {
   title: "Robin Lovell",
   description: "Software Engineer",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon-32x32.png",
+  },
 }
 
 export default function RootLayout({
@@ -22,6 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon-32x32.png" type="image/x-icon" />
+      </Head>
       <body className={`${pixelFont.variable} font-pixel bg-black text-starWhite`}>
         <StarryBackground />
        
