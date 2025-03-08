@@ -59,7 +59,7 @@ const CurrentActivities = ({ skills }: { skills: { [key: string]: string } }) =>
     {
       name: "Self-study",
       projects: [
-        { title: "Build an LLM from Scratch", skills: ["Custom LLMs"], description: "Learn to implement custom LLMs through this book by Sebastian Raschka", startDate: new Date(2024, 11), currentProgress: 32, total: 100, label: "32% complete", status: "In Progress", isActive: true, currentTask: "Chapter 3" },
+        { title: "Build an LLM from Scratch", skills: ["Custom LLMs","Python", "PyTorch", "Machine Learning"], description: "Learn to implement custom LLMs through this book by Sebastian Raschka", startDate: new Date(2024, 11), currentProgress: 32, total: 100, label: "32% complete", status: "In Progress", isActive: true, currentTask: "Chapter 3" },
         { title: "Fundamentals of Software Architecture", skills: [], description: "Book & course by Mark Richards and Neal Ford", startDate: new Date(2024, 11), currentProgress: 10, total: 100, label: "10% complete", status: "In Progress" },
         // { title: "UX Design", skills: [], description: "", status: "To Do" },
         // { title: "Tailwind CSS", skills: [], description: "", status: "To Do" }
