@@ -1,5 +1,5 @@
 import type React from "react"
-import Link from "next/link"
+// import Link from "next/link"
 import type { Skill } from "./Skills"
 import Image from "next/image"
 
@@ -9,7 +9,7 @@ interface SkillCardProps {
 
 const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
   return (
-    <Link href={`/skills/${encodeURIComponent(skill.name.toLowerCase())}`}>
+    // <Link href={`/skills/${encodeURIComponent(skill.name.toLowerCase())}`}>
       <div className="bg-transparent  p-4 rounded-lg  ">
       {skill.image ? (
           <div className="h-12 mb-2 relative">
@@ -27,7 +27,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
         )}
        
       </div>
-    </Link>
+    // </Link>
   );
 }
 

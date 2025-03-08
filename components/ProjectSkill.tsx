@@ -6,7 +6,7 @@ interface ProjectSkillProps {
   image?: string;
 }
 
-const ProjectSkill: React.FC<ProjectSkillProps> = ({ skill, key, image }) => {
+const ProjectSkill: React.FC<ProjectSkillProps> = ({ skill, image }) => {
 
   return (
     <div className="border-1 border-white inline-flex items-center rounded-sm text-black">

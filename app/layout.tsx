@@ -1,10 +1,10 @@
 import "./globals.css"
-import { Press_Start_2P } from "next/font/google"
+import { Chakra_Petch } from "next/font/google"
 import StarryBackground from "../components/StarryBackground"
 import Navigation from "../components/Navigation"
 import type React from "react"
 
-const pixelFont = Press_Start_2P({
+const pixelFont = Chakra_Petch({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-pixel",

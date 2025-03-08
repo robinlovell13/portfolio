@@ -578,19 +578,24 @@ export default function Home() {
             <div className="max-w-screen-2xl mx-auto px-1 sm:px-6 md:px-8">
                 {forEmployers ? <section id="home" className="min-h-screen flex flex-col items-center justify-center">
                     <div className="text-center">
-                        <h1 className="text-4xl mb-4">Robin Lovell</h1>
-                        <p className="text-xl">Software Engineer</p>
-                        <p className="text-lg">Next.js | AWS | JavaScript | Amazon Connect | Custom LLMs</p>
+                        <h1 className="text-2xl sm:text-6xl mb-4">Software Engineer</h1>
+                        <p className="text-lg sm:text-xl">Next.js | AWS | JavaScript | Amazon Connect | Custom LLMs</p>
+                      
                     </div>
                 </section> :
                     <section id="home" className="min-h-screen flex flex-col items-center justify-center">
                         <div className="text-center">
-                            <h1 className="text-4xl mb-4">Lovell Solutions</h1>
-                            <p className="text-xl">Custom AI | Contact Centers | Automations | Web Magic</p>
+                        <h1 className="text-2xl sm:text-6xl mb-4">Freelance Software Engineer for your Web and AI needs</h1>
+                        <p className="text-lg sm:text-xl mt-10">AI | Contact Centers | Automations | Web and Mobile Apps</p>
+                        <p className="text-center text-lg sm:text-xl mt-10  rounded-lg">   Free services for my first 3 clients. </p>
+                        <button className="bg-white hover:bg-gray-800  mt-10 text-black font-bold py-2 px-4 rounded offer-text">
+                            Let's Connect
+                        </button>
                         </div>
-                        <a href="#contact" className="text-center text-xl mt-12  underline hover:bg-gray-800 cta-button rounded-lg">
-                            Offering <span className="text-green-500">FREE</span> development services to 3 clients! Let's connect.
-                        </a>
+                      
+                          
+                       
+                       
                     </section>}
                
                 <CurrentActivities skills = {skills}/>

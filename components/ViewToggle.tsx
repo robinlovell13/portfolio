@@ -10,7 +10,7 @@ interface ViewToggleProps {
 const ViewToggle: React.FC<ViewToggleProps> = ({ forEmployers, setForEmployers }) => {
     return (
         <div className="flex items-center space-x-2 overflow-hidden">
-            <span className={`text-sm ${forEmployers ? "text-gray-400" : "text-white-400"}`}>Clients</span>
+            <span className={`text-sm ${forEmployers ? "text-gray-400" : "text-white-400"}`}>Client Site</span>
             <button
                 onClick={() => setForEmployers((prev: boolean) => !prev)}
                 className="relative inline-flex items-center h-6 rounded-full w-11 transition-colors "
@@ -22,7 +22,7 @@ const ViewToggle: React.FC<ViewToggleProps> = ({ forEmployers, setForEmployers }
                     }`}
                 />
             </button>
-            <span className={`text-sm ${!forEmployers ? "text-gray-400" : "text-white-400"}`}>Employers</span>
+            <span className={`text-sm ${!forEmployers ? "text-gray-400" : "text-white-400"}`}>Employer Site</span>
         </div>
     )
 }

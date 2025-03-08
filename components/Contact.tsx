@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section id="contact" className="min-h-screen flex items-center justify-center p-8">
       <div className=" w-full">
-        <h2 className="text-3xl mb-6 text-center">Let's Connect</h2>
+        <h2 className="text-4xl mb-6 text-center">Let's Connect</h2>
         {/* <form className="space-y-4">
           <div>
             <label htmlFor="name" className="block mb-2">

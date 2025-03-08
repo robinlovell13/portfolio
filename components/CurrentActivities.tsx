@@ -102,7 +102,7 @@ const CurrentActivities = ({ skills }: { skills: { [key: string]: string } }) =>
         </div>
       )}
     
-      <h5 className="font-semibold mb-2">{project.title}</h5>
+      <h5 className="font-semibold mb-2 text-lg">{project.title}</h5>
       {project.image && (
       <div className="mb-4">
         <img
@@ -121,9 +121,9 @@ const CurrentActivities = ({ skills }: { skills: { [key: string]: string } }) =>
         />
         ))}
       </div>
-      <p className="text-sm text-gray-300 mb-2">{project.description}</p>
+      <p className="text-md text-gray-300 mb-2">{project.description}</p>
       {project.startDate && (
-        <p className="text-xs text-gray-400 mb-2">
+        <p className="text-sm text-gray-400 mb-2">
           {formatDate(project.startDate)} - {project.endDate ? formatDate(project.endDate) : "Present"}
         </p>
       )}
@@ -140,11 +140,11 @@ const CurrentActivities = ({ skills }: { skills: { [key: string]: string } }) =>
   )
   return (
     <section id="projects" className="min-h-screen py-16">
-      <h2 className="text-3xl mb-12 text-center border-b-2 py-4 md:py-0 md:border-0 border-white">Projects</h2>
+      <h2 className="text-4xl mb-12 text-center border-b-2 py-4 md:py-0 md:border-0 border-white">Projects</h2>
       <div className="space-y-12">
         {categories.map((category, categoryIndex) => (
-          <div key={category.name} className="bg-transparent md:border-2 md:border-white rounded-lg py-6 md:px-6 relative">
-            <h3 className="text-xl font-semibold mb-6 absolute top-2 left-2 bg-transparent md:border-2 md:border-white px-3 py-1 rounded-lg">
+          <div key={category.name} className="bg-transparent rounded-lg py-6 md:px-6 relative">
+            <h3 className="text-2xl font-semibold mb-6 absolute top-2 left-2 bg-transparent px-3 py-1 rounded-lg">
               {category.name}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">

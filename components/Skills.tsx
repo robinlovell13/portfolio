@@ -25,7 +25,7 @@ const Skills: React.FC<SkillsProps> = ({ skillCategories, forEmployers }) => {
 
     return (
         <section id="skills" className="min-h-screen py-16">
-            <h2 className="text-3xl mb-12 text-center ">Skills</h2>
+            <h2 className="text-4xl mb-12 text-center ">Skills</h2>
             <div className="space-y-12">
                 {skillCategories.map((category, index) => (
                     <CategorySkills key={index} category={category} />
