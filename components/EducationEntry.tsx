@@ -26,7 +26,7 @@ interface EducationEntryProps {
 
 const EducationEntry: React.FC<EducationEntryProps> = ({ education, skills }) => {
   return (
-    <div className="bg-transparent border-2 border-white py-6 rounded-lg">
+    <div className="bg-transparent  py-6 rounded-lg">
       <div className="mb-4">
         <h3 className="text-2xl font-bold mx-4">{education.major}</h3>
         <h4 className="text-xl mx-4">{education.school}</h4>

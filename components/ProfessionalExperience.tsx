@@ -75,7 +75,7 @@ const ProfessionalExperience = ({ skills }: { skills: { [key: string]: string } 
 
   return (
     <section id="professional-experience" className="min-h-screen py-16">
-      <h2 className="text-4xl mb-12 text-center">Experience</h2>
+      <h2 className="text-4xl mb-12 text-center ">Experience</h2>
       <div className="space-y-12">
         {experiences.map((experience, index) => (
           <ExperienceEntry key={index} experience={experience} skills = {skills} />

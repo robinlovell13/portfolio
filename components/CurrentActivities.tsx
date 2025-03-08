@@ -140,7 +140,7 @@ const CurrentActivities = ({ skills }: { skills: { [key: string]: string } }) =>
   )
   return (
     <section id="projects" className="min-h-screen py-16">
-      <h2 className="text-4xl mb-12 text-center border-b-2 py-4 md:py-0 md:border-0 border-white">Projects</h2>
+      <h2 className="text-4xl mb-12 text-center  py-4 md:py-0 ">Projects</h2>
       <div className="space-y-12">
         {categories.map((category, categoryIndex) => (
           <div key={category.name} className="bg-transparent rounded-lg py-6 md:px-6 relative">

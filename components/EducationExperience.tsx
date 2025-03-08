@@ -50,7 +50,7 @@ const Education = ({ skills }: { skills: { [key: string]: string } }) => {
 
     return (
         <section id="education" className="min-h-screen py-16 ">
-            <h2 className="text-4xl mb-12 text-center">Education</h2>
+            <h2 className="text-4xl mb-12 text-center ">Education</h2>
             <div className="space-y-12">
                 {educationExperiences.map((education, index) => (
                     <EducationEntry key={index} education={education} skills = {skills}/>

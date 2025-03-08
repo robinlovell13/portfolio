@@ -25,7 +25,7 @@ interface ExperienceEntryProps {
 
 const ExperienceEntry: React.FC<ExperienceEntryProps> = ({ experience, skills }) => {
   return (
-    <div className="bg-transparent border-2 border-white py-6 rounded-lg">
+    <div className="bg-transparent  py-6 rounded-lg">
       <div className="mb-4">
         <h3 className="text-2xl font-bold mx-4">{experience.position}</h3>
         <h4 className="text-xl mx-4">{experience.company}</h4>
