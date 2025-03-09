@@ -8,7 +8,7 @@ import CompletedProjects from "../components/CompletedProjects"
 import ProfessionalExperience from "../components/ProfessionalExperience"
 import Education from "../components/EducationExperience"
 import Skills from "../components/Skills"
-import { useState, useEffect  } from "react";
+import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 export interface Skill {
     name: string
@@ -20,7 +20,7 @@ export interface SkillCategory {
     skills: Skill[]
 }
 
-export default function Home() { 
+export default function Home() {
     const searchParams = useSearchParams();
     const [forEmployers, setForEmployers] = useState(false);
 
@@ -108,11 +108,13 @@ export default function Home() {
                     "image": "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-ar21~bgwhite.svg",
                     "proficiency": 100
                 },
-                {"name": "Next.js",
+                {
+                    "name": "Next.js",
                     "image": "https://www.vectorlogo.zone/logos/nextjs/nextjs-ar21~bgwhite.svg",
                     "proficiency": 80
                 },
-                {   "name": "Tailwind CSS",
+                {
+                    "name": "Tailwind CSS",
                     "image": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21~bgwhite.svg",
                     "proficiency": 80
                 },
@@ -352,11 +354,13 @@ export default function Home() {
         {
             name: "App and Web Development",
             skills: [
-                {"name": "Next.js",
+                {
+                    "name": "Next.js",
                     "image": "https://www.vectorlogo.zone/logos/nextjs/nextjs-ar21~bgwhite.svg",
                     "proficiency": 80
                 },
-                {   "name": "Tailwind CSS",
+                {
+                    "name": "Tailwind CSS",
                     "image": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21~bgwhite.svg",
                     "proficiency": 80
                 },
@@ -566,12 +570,12 @@ export default function Home() {
         },
 
         ]
-        const skills: { [key: string]: string } = Object.fromEntries(
-            skillCategories.flatMap(category =>
-              category.skills.map(skill => [skill.name, skill.image])
-            )
-          );
-          
+    const skills: { [key: string]: string } = Object.fromEntries(
+        skillCategories.flatMap(category =>
+            category.skills.map(skill => [skill.name, skill.image])
+        )
+    );
+
     return (
         <main >
             <Navigation forEmployers={forEmployers} setForEmployers={setForEmployers} />
@@ -580,31 +584,31 @@ export default function Home() {
                     <div className="text-center">
                         <h1 className="text-2xl sm:text-6xl mb-4">Software Engineer</h1>
                         <p className="text-lg sm:text-xl">Next.js | AWS | JavaScript | Amazon Connect | Custom LLMs</p>
-                      
+
                     </div>
                 </section> :
                     <section id="home" className="min-h-screen flex flex-col items-center justify-center">
                         <div className="text-center">
-                        <h1 className="text-2xl sm:text-6xl mb-4">Freelance Software Engineer for your Web and AI needs</h1>
-                        <p className="text-lg sm:text-xl mt-10">AI | Contact Centers | Automations | Web and Mobile Apps</p>
-                        <p className="text-center text-lg sm:text-xl mt-10  rounded-lg">   Free services for my first 3 clients. </p>
-                        <button className="bg-white hover:bg-gray-800  mt-10 text-black font-bold py-2 px-4 rounded offer-text">
-                            Let's Connect
-                        </button>
+                            <h1 className="text-2xl sm:text-6xl mb-4">Freelance Software Engineer for your Web and AI needs</h1>
+                            <p className="text-lg sm:text-xl mt-10">AI | Contact Centers | Automations | Web and Mobile Apps</p>
+                            <p className="text-center text-lg sm:text-xl mt-10  rounded-lg">   Free services for my first 3 clients. </p>
+                            <a href="#contact" className="bg-white hover:bg-gray-800 mt-10 text-black font-bold py-2 px-4 rounded offer-text inline-block text-center">
+                                Let's Connect
+                            </a>
                         </div>
-                      
-                          
-                       
-                       
+
+
+
+
                     </section>}
-               
-                <CurrentActivities skills = {skills}/>
+
+                <CurrentActivities skills={skills} />
                 <Recommendations />
-                <ProfessionalExperience skills = {skills}/>
-               
-                
-                <Education skills = {skills}/>
-                <Skills skillCategories = {skillCategories} forEmployers={forEmployers}/>
+                <ProfessionalExperience skills={skills} />
+
+
+                <Education skills={skills} />
+                <Skills skillCategories={skillCategories} forEmployers={forEmployers} />
                 <About />
                 <Contact />
             </div>
