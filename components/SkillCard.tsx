@@ -23,7 +23,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
               }} />
           </div>
         ) : (
-          <h3 className="text-lg font-semibold mb-2">{skill.name}</h3>
+          <h3 className="text-lg text-center font-semibold mb-2">{skill.name}</h3>
         )}
        
       </div>
