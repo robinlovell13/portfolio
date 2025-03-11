@@ -44,7 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, skills }) => {
         />
       </div>
     )}
-      <div className="flex flex-wrap gap-x-2 gap-y-2 mb-2">
+      <div className="flex flex-wrap gap-x-2 gap-y-2 mb-4">
         {project.skills.map((skill, skillIndex) => (
           <ProjectSkill
           skill={skill}
