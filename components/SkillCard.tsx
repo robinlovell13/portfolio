@@ -10,20 +10,24 @@ interface SkillCardProps {
 const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
   return (
     // <Link href={`/skills/${encodeURIComponent(skill.name.toLowerCase())}`}>
-      <div className=" flex h-12 mb-2 relative bg-transparent justify-center items-center rounded-lg  ">
+      <div className=" flex min-h-12 overflow-hidden h-12 max-h-fit mb-2 relative bg-transparent justify-center items-center rounded-lg  ">
       {skill.image ? (
           
             <Image
               src={skill.image || "/placeholder.svg"}
               alt={skill.name}
-              fill
+              height={48}
+              width={0}
               sizes="100vw"
               style={{
-                objectFit: "contain"
-              }} />
+                objectFit: "contain",
+                
+              }}
+              className="h-full w-auto bg-white rounded-lg "
+              />
           
         ) : (
-          <h3 className="bg-white rounded-lg relative h-full text-lg p-1 flex items-center text-center justify-center text-black font-semibold">{skill.name}</h3>
+          <h3 className="text-xs max-w-24 bg-white rounded-lg relative break-words leading-tight min-w-24 h-full text-lg p-1 flex items-center text-center justify-center text-black font-semibold">{skill.name}</h3>
         )}
        
       </div>
