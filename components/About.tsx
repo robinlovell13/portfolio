@@ -8,7 +8,7 @@ const About = () => {
           My journey in the tech realm has led me to explore state-of-the-art technologies and develop creative applications.
         </p>
         <p>
-          When I'm not coding, you can find me weightlifting, playing piano, learning Spanish and jiu jitsu, and more.
+          When I'm not coding, you can find me lifting weights, playing piano, learning Spanish, rolling in jiu jitsu, and more.
           Let's create something amazing together!
         </p>
       </div>
