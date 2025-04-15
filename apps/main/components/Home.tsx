@@ -577,48 +577,37 @@ export default function Home() {
     );
 
     return (
-        <main >
-            <Navigation forEmployers={forEmployers} setForEmployers={setForEmployers} />
-            <div className="max-w-screen-2xl mx-auto px-1 sm:px-6 md:px-8 ">
-                    <section id="home" className="min-h-screen flex justify-center items-center py-24 lg:py-0 px-4 lg:px-0">
-                        <div className="flex flex-col lg:flex-row justify-center items-center rounded-3xl bg-muted px-8 lg:px-20 py-14">
-                        <div className="text-center w-full lg:w-2/3">
-                            <h1 className="text-5xl lg:text-6xl mb-4 font-bold">I'll do your social media — first month free.</h1>
-                            <p className="text-2xl lg:text-3xl mt-10">Hi, I’m Robin — I'm a Google- and Meta-certified digital marketer and software developer who helps small businesses show up consistently online. I make it easy for you to have a strong, active presence on platforms like Instagram and Facebook without lifting a finger.</p>
-                            <a href="#contact" className="bg-accent hover:bg-gray-800 mt-10 text-muted-foreground] text-xl font-bold py-4 px-8 rounded-lg offer-text inline-block text-center">
-                            Contact Me
-                            </a>
-                        </div>
-                        <div className="px-8 lg:pl-32 text-left py-14 lg:py-0 w-full lg:w-1/3">
-                        <ul className="text-2xl list-disc space-y-10"> 
-                            <li>Content Creation: Reels, Posts, Stories</li>
-                            <li>Instagram & Facebook Management</li>
-                            <li>Social Media Scheduling</li> 
-                            <li>Strategy & Hashtag Optimization</li>
-                            <li>Ad Campaign Setup</li>
-                            </ul>
-                        </div> 
-                        </div>
-                    </section>
-                    <section id="examples" className="min-h-screen flex flex-col items-center justify-center ">
-                        <div className="text-center  bg-secondary text-secondary-foreground rounded-3xl px-20 py-14">
-                            <h1 className="text-xl sm:text-6xl mb-4 font-bold">Posts & templates</h1>
-                                <a href="#contact" className="bg-[#E0E0E0] hover:bg-gray-800 mt-10 text-foreground text-xl font-bold py-4 px-8 rounded-lg offer-text inline-block text-center">
-                                    See more
-                                </a>
-                        </div>
-                    </section>
-                <CurrentActivities skills={skills} />
-                <Recommendations />
-                <ProfessionalExperience skills={skills} />
-
-
-                <Education skills={skills} />
-                <Skills skillCategories={skillCategories} forEmployers={forEmployers} />
-                <About />
-                <Contact />
-            </div>
-        </main>
+    
+        <main className="h-screen flex flex-col">
+        <Navigation />
+        
+        <section className="flex-1 w-full flex flex-col sm:flex-row justify-center items-center p-4 text-center text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold">
+          <div className="flex w-full xl:w-1/3 aspect-[3/1] lg:aspect-[3/2] rounded-3xl bg-secondary p-6 justify-center items-center  m-6 lg:m-12  hover:bg-plain">
+            
+            <a href="https://software.robinlovell.com" target="_blank" rel="noopener noreferrer">
+            <ul>
+                <li> Software Development Services</li>
+                <br></br>
+                <li>→</li>
+                
+            </ul>
+             
+            </a>
+          </div>
+          <div className="flex w-full xl:w-1/3 aspect-[3/1] lg:aspect-[3/2]  rounded-3xl bg-muted p-6 justify-center items-center  m-6 lg:m-12  hover:bg-plain">
+            <a href="https://social.robinlovell.com" target="_blank" rel="noopener noreferrer">
+            <ul>
+                <li> Social Media Management Services</li>
+                <br></br>
+                <li>→</li>
+                
+            </ul>
+            </a>
+          </div>
+        </section>
+      </main>
+      
+       
     )
 }
 
