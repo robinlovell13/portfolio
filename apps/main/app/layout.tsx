@@ -1,19 +1,22 @@
 import '../styles/globals.css'
-import { Chakra_Petch } from "next/font/google"
+
 import StarryBackground from "../components/StarryBackground"
 import Navigation from "../components/Navigation"
 import type React from "react"
 import Head from "next/head";
 
-const pixelFont = Chakra_Petch({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-pixel",
+import { M_PLUS_Rounded_1c } from 'next/font/google'
+
+const mPlus = M_PLUS_Rounded_1c({
+  subsets: ['latin'],
+  weight: ['400', '700'], // or whatever weights you need
+  variable: '--font-mplus'
 })
+
 
 export const metadata = {
   title: "Robin Lovell",
-  description: "Software Engineer",
+  description: "Software and Social Media Services",
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
@@ -29,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className={`${pixelFont.variable} font-pixel bg-background text-foreground`}>
+      <body className={`${mPlus.variable} font-helvetica bg-background text-foreground`}>
         
        
         <div className="relative z-10 pt-16">{children}</div>

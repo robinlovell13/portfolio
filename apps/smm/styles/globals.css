@@ -38,7 +38,8 @@ body {
   --border: 10 100% 8%; 
   
   --accent: #FF4000;
-
+  --plain: #D6D6D6;
+  --plain-foreground: 10 100% 8%;
 }
 
 /* Optional: dark mode overrides */

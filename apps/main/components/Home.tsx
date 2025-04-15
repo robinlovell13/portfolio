@@ -586,7 +586,7 @@ export default function Home() {
             
             <a href="https://software.robinlovell.com" target="_blank" rel="noopener noreferrer">
             <ul>
-                <li> Software Development Services</li>
+                <li> Software Development</li>
                 <br></br>
                 <li>→</li>
                 
@@ -597,7 +597,7 @@ export default function Home() {
           <div className="flex w-full xl:w-1/3 aspect-[3/1] lg:aspect-[3/2]  rounded-3xl bg-muted p-6 justify-center items-center  m-6 lg:m-12  hover:bg-plain">
             <a href="https://social.robinlovell.com" target="_blank" rel="noopener noreferrer">
             <ul>
-                <li> Social Media Management Services</li>
+                <li> Social Media Management</li>
                 <br></br>
                 <li>→</li>
                 

@@ -33,6 +33,10 @@ module.exports = {
           DEFAULT: "var(--muted)",
           foreground: "hsl(var(--muted-foreground) / <alpha-value>)",
         },
+        plain: {
+          DEFAULT: "var(--plain)",
+          foreground: "hsl(var(--plain-foreground) / <alpha-value>)",
+        },
         accent: "var(--accent)",
         border: "hsl(var(--border) / <alpha-value>)"
       },

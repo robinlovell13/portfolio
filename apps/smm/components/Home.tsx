@@ -580,22 +580,29 @@ export default function Home() {
         <main >
             <Navigation forEmployers={forEmployers} setForEmployers={setForEmployers} />
             <div className="max-w-screen-2xl mx-auto px-1 sm:px-6 md:px-8 ">
-                    <section id="home" className="min-h-screen flex justify-center items-center py-24 lg:py-0 px-4 lg:px-0">
-                        <div className="flex flex-col lg:flex-row justify-center items-center rounded-3xl bg-muted px-8 lg:px-20 py-14">
-                        <div className="text-center w-full lg:w-2/3">
-                            <h1 className="text-5xl lg:text-6xl mb-4 font-bold">I'll do your social media — first month free.</h1>
+                    <section id="home" className="min-h-screen flex justify-center items-center py-24  lg:py-0 px-4 lg:px-0">
+                        <div className="flex flex-col h-full lg:flex-row justify-center items-center items-stretch py-14">
+                        <div className="text-center w-full rounded-3xl bg-muted px-6 py-12 my-6 lg:m-6 lg:w-3/4">
+                        <ul>
+                            <li>
+                            <h1 className="text-5xl lg:text-6xl mb-4 font-bold">Social media, done for you.</h1>
+                            </li>
+                            <li>
+                            <h1 className="text-5xl lg:text-6xl mb-4 font-bold">First month free.</h1>
+                            </li>
+                        </ul>
                             <p className="text-2xl lg:text-3xl mt-10">Hi, I’m Robin — I'm a Google- and Meta-certified digital marketer and software developer who helps small businesses show up consistently online. I make it easy for you to have a strong, active presence on platforms like Instagram and Facebook without lifting a finger.</p>
                             <a href="#contact" className="bg-accent hover:bg-gray-800 mt-10 text-muted-foreground] text-xl font-bold py-4 px-8 rounded-lg offer-text inline-block text-center">
                             Contact Me
                             </a>
                         </div>
-                        <div className="px-8 lg:pl-32 text-left py-14 lg:py-0 w-full lg:w-1/3">
-                        <ul className="text-2xl list-disc space-y-10"> 
-                            <li>Content Creation: Reels, Posts, Stories</li>
-                            <li>Instagram & Facebook Management</li>
-                            <li>Social Media Scheduling</li> 
-                            <li>Strategy & Hashtag Optimization</li>
-                            <li>Ad Campaign Setup</li>
+                        <div className="text-left p-12 w-full flex items-center my-6 lg:m-6 bg-plain rounded-3xl font-bold lg:w-1/4">
+                        <ul className="text-2xl space-y-6"> 
+                            <li>- Content Creation: Reels, Posts, Stories</li>
+                            <li>- Instagram & Facebook Management</li>
+                            <li>- Social Media Scheduling</li> 
+                            <li>- Strategy & Hashtag Optimization</li>
+                            <li>- Ad Campaign Setup</li>
                             </ul>
                         </div> 
                         </div>
