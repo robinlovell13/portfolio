@@ -13,7 +13,7 @@ const Navigation = ({ forEmployers, setForEmployers }) => {
 
     <nav className="fixed top-0 left-0 w-full  bg-background z-20 py-4">
       <div className="flex justify-between items-center text-[--foreground] space-x-6 px-4 sm:px-6 ">
-        <a href="#home" className="flex items-center space-x-6 ">
+        <a href="https://www.robinlovell.com" className="flex items-center space-x-6 ">
           
             <p className="text-3xl sm:text-3xl">Robin Lovell</p>
         </a>

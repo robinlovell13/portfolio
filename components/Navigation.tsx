@@ -13,7 +13,7 @@ const Navigation = ({ forEmployers, setForEmployers }) => {
 
     <nav className="fixed top-0 left-0 w-full border-b-2 border-white bg-black z-20 py-4">
       <div className="flex justify-between items-center text-white space-x-6 px-4 sm:px-6 ">
-        <a href="#home" className="flex items-center space-x-6 ">
+        <a href="https://www.robinlovell.com" className="flex items-center space-x-6 ">
           {forEmployers ?
             (<p className="text-lg sm:text-3xl">Robin Lovell</p>) :
             (<p className="text-lg sm:text-3xl">Lovell Solutions</p>)}
