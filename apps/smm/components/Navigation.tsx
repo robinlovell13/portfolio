@@ -15,7 +15,7 @@ const Navigation = ({ forEmployers, setForEmployers }) => {
       <div className="flex justify-between items-center text-[--foreground] space-x-6 px-4 sm:px-6 ">
         <a href="#home" className="flex items-center space-x-6 ">
           
-            <p className="text-lg sm:text-3xl">Robin Lovell</p>
+            <p className="text-3xl sm:text-3xl">Robin Lovell</p>
         </a>
         <div className="hidden md:flex justify-center text-[--foreground] text-lg items-center flex-grow space-x-6">
 
