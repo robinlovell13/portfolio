@@ -11,14 +11,13 @@ const Navigation = ({ forEmployers, setForEmployers }) => {
 
   return (
 
-    <nav className="fixed top-0 left-0 w-full border-b-2 border-white bg-black z-20 py-4">
-      <div className="flex justify-between items-center text-white space-x-6 px-4 sm:px-6 ">
+    <nav className="fixed top-0 left-0 w-full  bg-background z-20 py-4">
+      <div className="flex justify-between items-center text-[--foreground] space-x-6 px-4 sm:px-6 ">
         <a href="#home" className="flex items-center space-x-6 ">
-          {forEmployers ?
-            (<p className="text-lg sm:text-3xl">Robin Lovell</p>) :
-            (<p className="text-lg sm:text-3xl">Lovell Solutions</p>)}
+          
+            <p className="text-lg sm:text-3xl">Robin Lovell</p>
         </a>
-        <div className="hidden md:flex justify-center text-white text-lg items-center flex-grow space-x-6">
+        <div className="hidden md:flex justify-center text-[--foreground] text-lg items-center flex-grow space-x-6">
 
 
           <a href="#projects" className="hover:bg-gray-800">
@@ -61,7 +60,7 @@ const Navigation = ({ forEmployers, setForEmployers }) => {
       </div>
 
       {isMenuOpen && (
-        <div className="mt-6 absolute right-0 mt-4 bg-black w-full sm:w-72">
+        <div className="mt-6 absolute right-0 mt-4 bg-background w-full sm:w-72">
           <ul className="flex flex-col space-y-2">
           <li>
           <div className="block py-2">

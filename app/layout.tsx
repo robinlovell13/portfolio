@@ -1,4 +1,4 @@
-import "./globals.css"
+import '../styles/globals.css'
 import { Chakra_Petch } from "next/font/google"
 import StarryBackground from "../components/StarryBackground"
 import Navigation from "../components/Navigation"

@@ -1,4 +1,4 @@
-import "./globals.css"
+import '../styles/globals.css'
 import { Chakra_Petch } from "next/font/google"
 import StarryBackground from "../components/StarryBackground"
 import Navigation from "../components/Navigation"
@@ -29,8 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className={`${pixelFont.variable} font-pixel bg-black text-starWhite`}>
-        <StarryBackground />
+      <body className={`${pixelFont.variable} font-pixel bg-background text-foreground`}>
+        
        
         <div className="relative z-10 pt-16">{children}</div>
       </body>
