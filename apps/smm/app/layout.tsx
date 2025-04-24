@@ -5,12 +5,12 @@ import Navigation from "../components/Navigation"
 import type React from "react"
 import Head from "next/head";
 
-import { M_PLUS_Rounded_1c } from 'next/font/google'
+import { Montserrat } from 'next/font/google';
 
-const mPlus = M_PLUS_Rounded_1c({
+const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400', '700'], // or whatever weights you need
-  variable: '--font-mplus'
+  weight: ['400'], 
+  variable: '--font-montserrat',
 })
 
 export const metadata = {
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className={`${mPlus.variable} font-helvetica bg-background text-foreground`}>
+      <body className={`${montserrat.variable} font-montserrat bg-background text-foreground`}>
         
        
         <div className="relative z-10 pt-16">{children}</div>

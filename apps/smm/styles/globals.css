@@ -8,7 +8,7 @@ html, body {
 
 body {
 
-  font-family: Helvetica;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -21,15 +21,15 @@ body {
 
 :root {
  
-  --background: 36 100% 96%;           
-  --foreground: 10 100% 8%;           
+  --background: #FEEFDD;           
+  --foreground: #210124;           
 
-  --primary: #FAAA8D;              
-  --primary-foreground: 0 0% 100%;     
+  --primary: #CC3300;              
+  --primary-foreground: #FFFFFF;     
 
-  --secondary: #A5D7DF;            
+  --secondary: #1098F7;            
   --secondary-foreground: 10 100% 8%;   
-
+  --hover: #1098F7;
   --accent: 22 93% 78%;                
 
   --muted: #FDE3C4;                
@@ -38,6 +38,7 @@ body {
   --border: 10 100% 8%; 
   
   --accent: #FF4000;
+  --accent-foreground: #FFFFFF;
   --plain: #D6D6D6;
   --plain-foreground: 10 100% 8%;
 }

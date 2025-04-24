@@ -15,8 +15,8 @@ module.exports = {
         'xs': '375px'
       },
       colors: {
-        background: "hsl(var(--background) / <alpha-value>)",
-        foreground: "hsl(var(--foreground) / <alpha-value>)",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
 
         primary: {
           DEFAULT: "var(--primary)",
@@ -28,6 +28,10 @@ module.exports = {
         },
         accent: {
           DEFAULT: "hsl(var(--accent) / <alpha-value>)",
+          foreground: "var(--accent-foreground)",
+        },
+        hover: {
+          DEFAULT: "var(--hover)"
         },
         muted: {
           DEFAULT: "var(--muted)",
@@ -41,7 +45,7 @@ module.exports = {
         border: "hsl(var(--border) / <alpha-value>)"
       },
       fontFamily: {
-        helvetica: ["var(--font-helvetica)"],
+        montserrat: ["var(--font-montserrat)"],
       },
       
       
