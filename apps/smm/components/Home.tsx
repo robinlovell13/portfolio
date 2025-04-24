@@ -29,7 +29,7 @@ export default function Home() {
         <main className="flex flex-col items-center">
             <div id="container" className="w-7/8 sm:w-5/6 md:w-3/4 lg:w-1/2 flex flex-col items-center">
                 <Navigation />
-                <section id="home" className="min-h-[calc(100vh-4rem)] w-full flex flex-col justify-center items-center text-center ">
+                <section id="home" className="md:min-h-[calc(100vh-4rem)] mt-32 w-full flex flex-col justify-center items-center text-center ">
                     <ul>
                         <li>
                             <h1 className="text-5xl lg:text-6xl mt-4 font-bold">Social media, done for you.</h1>
