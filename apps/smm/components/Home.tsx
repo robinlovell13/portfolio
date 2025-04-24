@@ -1,7 +1,7 @@
 "use client"
 import Navigation from "../components/Navigation"
 
-import Recommendations from "../components/Recommendations"
+
 
 import { useState } from 'react';
 
@@ -27,15 +27,15 @@ export default function Home() {
 
     return (
         <main className="flex flex-col items-center">
-            <div id="container" className="w-7/8 sm:w-5/6 md:w-3/4 lg:w-1/2 flex flex-col items-center">
+            <div id="container" className="w-full px-4 sm:px-0 sm:w-5/6 md:w-3/4 lg:w-3/4 xl:w-2/3 flex flex-col items-center">
                 <Navigation />
-                <section id="home" className="md:min-h-[calc(100vh-4rem)] mt-32 w-full flex flex-col justify-center items-center text-center ">
+                <section id="home" className="md:min-h-[calc(100vh-4rem)] mt-24 md:mt-0 w-full flex flex-col justify-center items-start text-left ">
                     <ul>
                         <li>
-                            <h1 className="text-5xl lg:text-6xl mt-4 font-bold">Social media, done for you.</h1>
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl mt-4 font-bold">Social media, done for you.</h1>
                         </li>
                         <li>
-                            <h1 className="text-5xl lg:text-6xl mt-4 font-bold">First month free.</h1>
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl mt-4 font-bold">First month free.</h1>
                         </li>
                     </ul>
                     <p className="text-2xl lg:text-3xl mt-16">Hi, I'm Robin, a Google- and Meta-certified digital marketer who helps small businesses show up consistently online. I make it easy for you to have a strong, active presence on platforms like Instagram and Facebook without lifting a finger.</p>
@@ -48,7 +48,7 @@ export default function Home() {
 
 
                 </section>
-                <section id="examples" className="min-h-[calc(100vh-4rem)] w-full flex justify-center items-center ">
+                {/* <section id="examples" className="min-h-[calc(100vh-4rem)] w-full flex justify-center items-center ">
                     <div className="flex flex-col min-h-[100%] w-full lg:flex-row justify-center items-center items-stretch">
                         <div className="flex-1 text-center items-center justify-center min-h-[100%] lg:w-full lg:rounded-3xl bg-secondary px-6 py-12 my-6 lg:m-6 lg:w-3/4">
                             <h1 className="text-xl sm:text-6xl mb-4 font-bold">Posts & templates</h1>
@@ -58,7 +58,7 @@ export default function Home() {
                         </div>
 
                     </div>
-                </section>
+                </section> */}
                 <section className="min-h-[calc(100vh-4rem)] w-full mt-6 flex flex-col justify-center items-center ">
                 <h1 className="text-5xl lg:text-6xl font-bold">FAQs</h1>
                     <dl className="space-y-4 w-full mt-12 divide-y divide-gray-200">
@@ -143,7 +143,7 @@ export default function Home() {
                     </form>
                 </section>
                 
-                <Recommendations />
+         
 
 
 
