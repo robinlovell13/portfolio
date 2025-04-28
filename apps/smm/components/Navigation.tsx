@@ -10,7 +10,7 @@ const Navigation = () => {
 
   return (
 
-    <nav className="fixed top-0 left-0 w-full bg-transparent z-20 py-4 flex grid grid-rows-[auto_1fr_auto] md:grid-cols-[auto_1fr_auto] items-center px-4 sm:px-6 text-[--foreground]">
+    <nav className="fixed top-0 left-0 w-full bg-background z-20 py-4 flex grid grid-rows-[auto_1fr_auto] md:grid-cols-[auto_1fr_auto] items-center px-4 sm:px-6 text-[--foreground]">
      
       <a href="https://www.robinlovell.com" className="flex justify-start text-3xl">
         Robin Lovell

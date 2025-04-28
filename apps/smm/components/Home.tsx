@@ -35,7 +35,7 @@ export default function Home() {
                             <h1 className="text-4xl sm:text-5xl md:text-6xl mt-4 font-bold">Social media, done for you.</h1>
                         </li>
                         <li>
-                            <h1 className="text-4xl sm:text-5xl md:text-6xl mt-4 font-bold">First month free.</h1>
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl mt-4 font-bold">First 3 months free.</h1>
                         </li>
                     </ul>
                     <p className="text-2xl lg:text-3xl mt-16">Hi, I'm Robin, a Google- and Meta-certified digital marketer who helps small businesses show up consistently online. I make it easy for you to have a strong, active presence on platforms like Instagram and Facebook without lifting a finger.</p>
