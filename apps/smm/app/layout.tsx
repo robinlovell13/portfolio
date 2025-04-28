@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className={`${montserrat.variable} font-montserrat bg-background text-foreground`}>
         
        
-        <div className="relative z-10 pt-16">{children}</div>
+        <div className="relative z-10 ">{children}</div>
       </body>
     </html>
   )
