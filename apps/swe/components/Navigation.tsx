@@ -21,16 +21,16 @@ const Navigation = ({ forEmployers, setForEmployers }) => {
         <div className="hidden md:flex justify-center text-white text-lg items-center flex-grow space-x-6">
 
 
-          <a href="#projects" className="hover:bg-gray-800">
-            Projects
-          </a>
+         
           <a href="#recommendations" className="hover:bg-gray-800 hidden lg:flex">
             Recommendations
           </a>
           <a href="#professional-experience" className="hover:bg-gray-800">
             Experience
           </a>
-
+          <a href="#projects" className="hover:bg-gray-800">
+            Projects
+          </a>
           <a href="/resume.pdf" className="hover:bg-gray-800">
             Resume
           </a>

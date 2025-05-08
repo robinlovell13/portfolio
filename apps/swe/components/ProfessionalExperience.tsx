@@ -25,6 +25,25 @@ export interface Skill {
 }
 const ProfessionalExperience = ({ skills }: { skills: { [key: string]: string } }) => {
   const experiences: Experience[] = [
+    
+    {
+      company: "Common Crow",
+      position: "Data Manager and Web Developer",
+      fromDate: "February 2024",
+      toDate: "Present",
+      description: "- Manage inventory and sales data utilizing Excel and ECRS Catapult, maintaining accuracy and efficiency in tracking product movements and sales trends. \n\n- Document business processes and conduct training sessions to facilitate adoption of processes. \n\n- Develop company website according to owners' style and feature preferences and synchronize content with external social media and job postings.",
+      projects: [
+        {
+          title: "Common Crow Website",
+          skills: ["Weebly", "Photoshop", "CSS"],
+          description: "Develop and maintain company website",
+          link: "http://www.commoncrow.com/",
+          image: "/images/commoncrow.PNG",
+          year: 2025
+        }
+      ]
+
+    },
     {
       company: "Perficient",
       position: "Associate Software Engineer Consultant",
@@ -52,25 +71,6 @@ const ProfessionalExperience = ({ skills }: { skills: { [key: string]: string } 
 
       ],
     },
-    {
-      company: "Common Crow",
-      position: "Data Manager and Web Developer",
-      fromDate: "February 2024",
-      toDate: "Present",
-      description: "- Manage inventory and sales data utilizing Excel and ECRS Catapult, maintaining accuracy and efficiency in tracking product movements and sales trends. \n\n- Document business processes and conduct training sessions to facilitate adoption of processes. \n\n- Develop company website according to owners' style and feature preferences and synchronize content with external social media and job postings.",
-      projects: [
-        {
-          title: "Common Crow Website",
-          skills: ["Weebly", "Photoshop", "CSS"],
-          description: "Develop and maintain company website",
-          link: "http://www.commoncrow.com/",
-          image: "/images/commoncrow.PNG",
-          year: 2025
-        }
-      ]
-
-    },
-
   ]
 
   return (

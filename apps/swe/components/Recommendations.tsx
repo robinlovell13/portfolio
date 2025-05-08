@@ -26,7 +26,7 @@ const Recommendations = () => {
         },
     ]
     return (
-        <section id = "recommendations">
+        <section id = "recommendations" className="py-16">
             <h2 className="text-4xl mb-12 text-center">Recommendations</h2>
             <div className="bg-transparent rounded-lg">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

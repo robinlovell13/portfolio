@@ -589,8 +589,8 @@ export default function Home() {
                 </section> :
                     <section id="home" className="min-h-screen flex flex-col items-center justify-center">
                         <div className="text-center">
-                            <h1 className="text-2xl sm:text-6xl mb-4">Freelance Software Engineer for your Web and AI needs</h1>
-                            <p className="text-lg sm:text-xl mt-10">AI | Contact Centers | Automations | Web and Mobile Apps</p>
+                            <h1 className="text-2xl sm:text-6xl mb-4">Freelance Engineer for your Web & Software needs</h1>
+                            <p className="text-lg sm:text-xl mt-10">Web and Mobile Apps | Contact Centers | Automations | AI</p>
                             <p className="text-center text-lg sm:text-xl mt-10  rounded-lg">   Free services for my first 3 clients. </p>
                             <a href="#contact" className="bg-white hover:bg-gray-800 mt-10 text-black font-bold py-2 px-4 rounded offer-text inline-block text-center">
                                 Let's Connect
@@ -601,16 +601,76 @@ export default function Home() {
 
 
                     </section>}
-
+                    <Recommendations />
+                    <ProfessionalExperience skills={skills} />
                 <CurrentActivities skills={skills} />
-                <Recommendations />
-                <ProfessionalExperience skills={skills} />
+                
+                
 
 
                 <Education skills={skills} />
                 <Skills skillCategories={skillCategories} forEmployers={forEmployers} />
                 <About />
-                <Contact />
+                <section id="contact" className="flex flex-col  mx-auto justify-center items-center   max-w-xl min-h-[calc(100vh-4rem)] ">
+                    <form
+                        action="https://formsubmit.co/mail@robinlovell.com"
+                        method="POST"
+                        className="w-full  p-6 rounded-xl space-y-4 "
+                    >
+                        <h2 className="text-4xl mb-12 text-center">Get in Touch</h2>
+
+                        <input type="text" name="_honey" style={{ display: 'none' }} />
+
+
+
+                        <div>
+                            <label className="block font-medium mb-1" htmlFor="name">
+                                Name
+                            </label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                className="w-full  rounded-lg bg-transparent p-2 border-2 border-white"
+                            />
+                        </div>
+
+                        <div>
+                            <label className="block  font-medium mb-1" htmlFor="email">
+                                Email
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                className="w-full  rounded-lg p-2 bg-transparent border-2 border-white"
+                            />
+                        </div>
+
+                        <div>
+                            <label className="block  font-medium mb-1" htmlFor="message">
+                                Message
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows={4}
+                                required
+                                className="w-full  rounded-lg p-2 resize-none bg-transparent border-2 border-white"
+                            ></textarea>
+                        </div>
+                        <div className = "text-center">
+                        <button
+                            type="submit"
+                            className="bg-white hover:bg-gray-800 mt-10 text-black font-bold py-2 px-4 rounded offer-text inline-block text-center">
+                            Send Message
+                        </button>
+                        </div>
+                       
+                    </form>
+                </section>
             </div>
         </main>
     )
