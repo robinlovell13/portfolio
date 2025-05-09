@@ -39,13 +39,13 @@ export default function Home() {
             <a href="https://www.robinlovell.com" className="flex justify-start text-2xl sm:text-3xl mr-4 sm:mb-4 lg:mb-0">
                             Robin Lovell
                         </a>
-            <div className="flex grid grid-rows-[auto_1fr_auto] lg:grid-cols-[auto_1fr_auto] items-center  lg:space-x-6 text-sm sm:text-base">
+            <div className="flex flex flex-col lg:flex-row items-center justify-end space-y-2 lg:space-y-0 lg:space-x-10 text-sm sm:text-base">
                       
             
 
-                        <ul className="flex flex-col lg:flex-row flex-1 items-end lg:items-center justify-end sm:justify-center space-y-2 sm:space-y-0 lg:space-x-10 ">
+                        <ul className="flex flex-col lg:flex-row flex-1 items-end sm:items-center justify-end sm:justify-center space-y-2 sm:space-y-0 lg:space-x-10 ">
                         
-                            <li className="text-center flex lg:items-center justify-start lg:justify-center">
+                            <li className="text-center flex sm:items-center justify-start sm:justify-center">
                                 <a href="tel:+14138131087" className="hover:text-secondary flex items-center justify-end lg:justify-center text-left lg:text-center space-x-2 w-full">
                                     <span className="flex-shrink-0">+1 413 813 1087</span>
                                     <svg className="w-4 h-4 opacity-40 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="16" width="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
@@ -116,7 +116,7 @@ export default function Home() {
 
                     </div>
                 </section> */}
-                <section className="min-h-screen w-full  flex flex-col justify-center  ">
+                <section className=" w-full  flex flex-col justify-start  mt-20 sm:mt-12 lg:mt-0">
                     <h1 className="text-3xl sm:text-5xl  md:text-6xl font-semibold sm:font-medium">FAQs</h1>
                     <dl className=" w-full mt-8 divide-y divide-gray-200">
                         {faqs.map((faq, index) => (
@@ -140,7 +140,7 @@ export default function Home() {
                         ))}
                     </dl>
                 </section>
-                <section id="contact" className="flex flex-col justify-center items-center w-full  sm:w-4/5 md:w-3/4 lg:w-1/2 min-h-screen ">
+                <section id="contact" className="flex flex-col justify-start items-center w-full mt-12 sm:mt-20 sm:w-4/5 md:w-3/4 lg:w-1/2 mb-20  sm:mb-48 ">
                     <form
                         action="https://formsubmit.co/mail@robinlovell.com"
                         method="POST"
