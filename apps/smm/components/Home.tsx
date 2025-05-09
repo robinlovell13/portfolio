@@ -36,10 +36,10 @@ export default function Home() {
             
             <div id="container" className="w-full px-4 sm:px-0 sm:w-5/6 md:w-3/4 lg:w-3/4 xl:w-2/3 mt-4 sm:mt-4 flex flex-col items-start">
             <div className="flex flex-row w-full justify-between">
-            <a href="https://www.robinlovell.com" className="flex justify-start text-xl sm:text-3xl mr-4 sm:mb-4 lg:mb-0">
+            <a href="https://www.robinlovell.com" className="flex justify-start text-2xl sm:text-3xl mr-4 sm:mb-4 lg:mb-0">
                             Robin Lovell
                         </a>
-            <div className="flex grid grid-rows-[auto_1fr_auto] lg:grid-cols-[auto_1fr_auto] items-center  lg:space-x-6 text-xs sm:text-base">
+            <div className="flex grid grid-rows-[auto_1fr_auto] lg:grid-cols-[auto_1fr_auto] items-center  lg:space-x-6 text-sm sm:text-base">
                       
             
 
