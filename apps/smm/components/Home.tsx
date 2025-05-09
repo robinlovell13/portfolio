@@ -19,7 +19,7 @@ export default function Home() {
             </>
           ) },
         { question: "What's your rate?", answer: "First 3 months free, then $105-$375 per week depending on scope." },
-        { question: 'Do you offer website design & development?', answer: "Yes! I'm excited for the opportunity to contribute my extensive web design & development experience to your business." },
+        { question: 'Do you offer website development?', answer: "Yes! I'm excited for the opportunity to contribute my extensive web design & development experience to your business." },
         { question: 'What was this site built with?', answer: 'This site was built with Next.js and Tailwind CSS.' },
         { question: 'Ok, enough about your work, what do you do in your spare time?', answer: "When I'm not working you can find me training in jiu-jitsu, trail running, and reading about history!" },
     ];
