@@ -90,13 +90,13 @@ export default function Home() {
 
                     <ul className="">
                         <li>
-                            <h1 className="text-4xl sm:text-5xl  md:text-6xl mt-2 sm:mt-4 font-bold">Digital marketing, done for you.</h1>
+                            <h1 className="text-4xl sm:text-5xl  md:text-6xl mt-2 sm:mt-4 font-semibold sm:font-medium">Digital marketing, done for you.</h1>
                         </li>
                         <li>
-                            <h1 className="text-4xl sm:text-5xl  md:text-6xl mt-2 sm:mt-4 font-bold">First 3 months free.</h1>
+                            <h1 className="text-4xl sm:text-5xl  md:text-6xl mt-2 sm:mt-4 font-semibold sm:font-medium">First 3 months free.</h1>
                         </li>
                     </ul>
-                    <a href="#contact" className="bg-accent hover:bg-primary mt-6 sm:mt-16 text-[--accent-foreground] text-md sm:text-lg font-bold p-3 sm:p-4 rounded-lg offer-text inline-block text-center">
+                    <a href="#contact" className="bg-accent hover:bg-primary mt-6 sm:mt-16 text-[--accent-foreground] text-md sm:text-lg font-semibold sm:font-medium p-3 sm:p-4 rounded-lg offer-text inline-block text-center">
                         Contact Me
                     </a>
                     <p className="text-xl sm:text-2xl mt-6 sm:mt-16">Social Media Scheduling | Content Creation | Search Engine Optimization | Web Development | Ad Campaign Setup</p>
@@ -120,7 +120,7 @@ export default function Home() {
                     </div>
                 </section> */}
                 <section className="min-h-screen w-full  flex flex-col justify-center  ">
-                    <h1 className="text-3xl sm:text-5xl  md:text-6xl font-bold">FAQs</h1>
+                    <h1 className="text-3xl sm:text-5xl  md:text-6xl font-semibold sm:font-medium">FAQs</h1>
                     <dl className=" w-full mt-8 divide-y divide-gray-200">
                         {faqs.map((faq, index) => (
                             <div key={index} className="py-8">
@@ -130,7 +130,7 @@ export default function Home() {
                                         className="flex items-start justify-between w-full text-left text-foreground hover:text-secondary "
                                         onClick={() => toggle(index)}
                                     >
-                                        <span className="font-semibold">{faq.question}</span>
+                                        <span className="font-semibold sm:font-medium">{faq.question}</span>
                                         <span className={`transform transition-transform duration-300 ${openIndex === index ? 'rotate-45' : 'rotate-0'}`}>
                                             +
                                         </span>
@@ -149,14 +149,14 @@ export default function Home() {
                         method="POST"
                         className="w-full bg-background  rounded-xl space-y-4 "
                     >
-                        <h2 className="text-3xl sm:text-5xl  md:text-6xl font-bold mb-12">Get in Touch</h2>
+                        <h2 className="text-3xl sm:text-5xl  md:text-6xl font-semibold sm:font-medium mb-12">Get in Touch</h2>
 
                         <input type="text" name="_honey" style={{ display: 'none' }} />
 
 
 
                         <div>
-                            <label className="block text-sm font-medium mb-1" htmlFor="name">
+                            <label className="block text-sm font-semibold sm:font-medium mb-1" htmlFor="name">
                                 Name
                             </label>
                             <input
@@ -169,7 +169,7 @@ export default function Home() {
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium mb-1" htmlFor="email">
+                            <label className="block text-sm font-semibold sm:font-medium mb-1" htmlFor="email">
                                 Email
                             </label>
                             <input
@@ -182,7 +182,7 @@ export default function Home() {
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium mb-1" htmlFor="message">
+                            <label className="block text-sm font-semibold sm:font-medium mb-1" htmlFor="message">
                                 Message
                             </label>
                             <textarea
@@ -196,7 +196,7 @@ export default function Home() {
 
                         <button
                             type="submit"
-                            className="bg-accent hover:bg-primary mt-6 sm:mt-16 text-[--accent-foreground] text-md sm:text-lg font-bold p-3 sm:p-4 rounded-lg offer-text inline-block text-center"
+                            className="bg-accent hover:bg-primary mt-6 sm:mt-16 text-[--accent-foreground] text-md sm:text-lg font-semibold sm:font-medium p-3 sm:p-4 rounded-lg offer-text inline-block text-center"
                         >
                             Send Message
                         </button>
