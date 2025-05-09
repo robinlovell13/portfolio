@@ -97,7 +97,7 @@ export default function Home() {
                         Contact Me
                     </a>
                     <p className="text-xl sm:text-2xl mt-6 sm:mt-16">Social Media Scheduling | Content Creation | Search Engine Optimization | Web Development | Ad Campaign Setup</p>
-                    <p className="text-2xl sm:text-3xl  mt-6 sm:mt-16">Hi, I'm Robin, a Google- and Meta-trained digital marketer. I look forward to helping your business 🌱 grow by transforming your online presence.</p>
+                    <p className="text-2xl sm:text-3xl  mt-6 sm:mt-16">Hi, I'm Robin, a Google- and Meta-trained digital marketer. I look forward to helping 🌱 grow your business by transforming your online presence.</p>
                     
                     
 
