@@ -129,7 +129,7 @@ export default function Home() {
                                     >
                                         <span className="font-semibold sm:font-medium">{faq.question}</span>
                                         <span className={`transform transition-transform duration-300 ${openIndex === index ? 'rotate-45' : 'rotate-0'}`}>
-                                            +
+                                            
                                         </span>
                                     </button>
                                 </dt>
