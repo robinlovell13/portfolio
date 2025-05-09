@@ -15,7 +15,7 @@ export default function Home() {
               I have a {' '}
               <a href="https://software.robinlovell.com" target="_blank" rel="noopener noreferrer" className="text-secondary underline">
               strong background in software development
-              </a>{' '} and am upskilling in digital marketing, pursuing certifications from Google and Meta. 
+              </a>{' '} and am expanding my skillset to include digital marketing, pursuing certifications from Google and Meta. 
             </>
           ) },
         { question: "What's your rate?", answer: "First 3 months free, then $105-$375 per week depending on scope." },
