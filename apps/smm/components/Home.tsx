@@ -34,7 +34,7 @@ export default function Home() {
     return (
         <main className="flex flex-col items-center">
             
-            <div id="container" className="w-full px-4 sm:px-0 sm:w-5/6 md:w-3/4 lg:w-3/4 xl:w-2/3 mt-2 sm:mt-4 flex flex-col items-start">
+            <div id="container" className="w-full px-4 sm:px-0 sm:w-5/6 md:w-3/4 lg:w-3/4 xl:w-2/3 mt-4 sm:mt-4 flex flex-col items-start">
             <div className="flex flex-row w-full justify-between">
             <a href="https://www.robinlovell.com" className="flex justify-start text-xl sm:text-3xl mr-4 sm:mb-4 lg:mb-0">
                             Robin Lovell
@@ -43,11 +43,8 @@ export default function Home() {
                       
             
 
-                        <ul className="flex flex-col lg:flex-row flex-1 items-end lg:items-center justify-end lg:justify-center lg:space-x-10 ">
-                        <li className="text-center flex items-end lg:items-center justify-end lg:justify-center">
+                        <ul className="flex flex-col lg:flex-row flex-1 items-end lg:items-center justify-end sm:justify-center space-y-2 sm:space-y-0 lg:space-x-10 ">
                         
-
-                            </li>
                             <li className="text-center flex lg:items-center justify-start lg:justify-center">
                                 <a href="tel:+14138131087" className="hover:text-secondary flex items-center justify-end lg:justify-center text-left lg:text-center space-x-2 w-full">
                                     <span className="flex-shrink-0">+1 413 813 1087</span>
