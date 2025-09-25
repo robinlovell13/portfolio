@@ -589,7 +589,7 @@ export default function Home() {
                 </section> :
                     <section id="home" className="min-h-screen flex flex-col items-center justify-center">
                         <div className="text-center">
-                            <h1 className="text-2xl sm:text-6xl mb-4">Freelance Software Engineer for your Web and AI needs</h1>
+                            <h1 className="text-2xl sm:text-6xl mb-4">Freelance Software Engineer</h1>
                             <p className="text-lg sm:text-xl mt-10">AI | Contact Centers | Automations | Web and Mobile Apps</p>
                             <p className="text-center text-lg sm:text-xl mt-10  rounded-lg">   Free services for my first 3 clients. </p>
                             <a href="#contact" className="bg-white hover:bg-gray-800 mt-10 text-black font-bold py-2 px-4 rounded offer-text inline-block text-center">

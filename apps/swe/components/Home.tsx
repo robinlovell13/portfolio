@@ -157,7 +157,17 @@ export default function Home() {
                     "name": "D3.js",
                     "image": "https://www.vectorlogo.zone/logos/d3js/d3js-ar21~bgwhite.svg",
                     proficiency: 100
-                }
+                },
+                {
+                    "name": "Wordpress",
+                    "image": "https://www.vectorlogo.zone/logos/wordpress/wordpress-ar21~bgwhite.svg",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Wix",
+                    "image": "https://www.vectorlogo.zone/logos/wix/wix-ar21~bgwhite.svg",
+                    "proficiency": 100
+                },
             ]
         },
         {
@@ -528,7 +538,17 @@ export default function Home() {
                     "name": "D3.js",
                     "image": "https://www.vectorlogo.zone/logos/d3js/d3js-ar21~bgwhite.svg",
                     "proficiency": 100
-                }
+                },
+                    {
+                    "name": "Wordpress",
+                    "image": "https://www.vectorlogo.zone/logos/wordpress/wordpress-ar21~bgwhite.svg",
+                    "proficiency": 100
+                },
+                {
+                    "name": "Wix",
+                    "image": "https://www.vectorlogo.zone/logos/wix/wix-ar21~bgwhite.svg",
+                    "proficiency": 100
+                },
             ]
         },
 
@@ -589,7 +609,7 @@ export default function Home() {
                 </section> :
                     <section id="home" className="min-h-screen flex flex-col items-center justify-center">
                         <div className="text-center">
-                            <h1 className="text-2xl sm:text-6xl mb-4">Freelance Engineer for your Web & Software needs</h1>
+                            <h1 className="text-2xl sm:text-6xl mb-4">Freelance Software Engineer</h1>
                             <p className="text-lg sm:text-xl mt-10">Web and Mobile Apps | Contact Centers | Automations | AI</p>
                             <p className="text-center text-lg sm:text-xl mt-10  rounded-lg">   Free services for my first 3 clients. </p>
                             <a href="#contact" className="bg-white hover:bg-gray-800 mt-10 text-black font-bold py-2 px-4 rounded offer-text inline-block text-center">

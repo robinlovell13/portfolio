@@ -25,7 +25,44 @@ export interface Skill {
 }
 const ProfessionalExperience = ({ skills }: { skills: { [key: string]: string } }) => {
   const experiences: Experience[] = [
-    
+    {
+      company: "Freelance Digital Marketer",
+      position: "",
+      fromDate: "July 2025",
+      toDate: "present",
+      description: "- Customize and maintain small businesses' online presences to grow their customer base, increase revenue, and save clients time\n\n- Design websites and social media posts, optimize search engine, and respond to inquiries from prospective customers\n\n- Work with clients to understand preferences and business goals and plan a marketing strategy",
+      projects: [
+        {
+          title: "Dance For World Community Website",
+          skills: ["Wordpress", "Digital Marketing", "Client Engagement"], description: "Work one-on-one with the founder of a non-profit dance organization to refine and develop a member forum for its website",
+          link: "https://www.danceforworldcommunity.org/",
+          image: "/images/danceforworldcommunity.PNG",
+          year: 2025
+        },
+        {
+          title: "Justified Self-Defense",
+          skills: ["Web Design","Amazon SES","Wix","Google Business Profile","Digital Marketing"], description: "Set up and maintain online presence for a self-defense instructor including website, search engine profile, and social media",
+          link: "https://www.justifiedselfdefense.com/",
+          image: "/images/jsd.PNG",
+          year: 2025
+        },
+        {
+          title: "Common Crow Natural Market Website",
+          skills: ["Weebly", "Photoshop"], description: "Develop business' website according to owner's design preferences",
+          link: "http://www.commoncrow.com/",
+          image: "/images/commoncrow.PNG",
+          year: 2024
+        },
+        {
+          title: "Personal Digital Marketing Website",
+          skills: ["Next.js", "TypeScript", "Vercel", "React", "Web Design"], description: "",
+          link: "https://social.robinlovell.com/",
+          image: "/images/digitalmarketingwebsite.PNG",
+          year: 2024
+        },
+
+      ],
+    },
     {
       company: "Common Crow",
       position: "Data Manager and Web Developer",

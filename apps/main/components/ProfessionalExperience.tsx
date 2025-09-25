@@ -26,6 +26,37 @@ export interface Skill {
 const ProfessionalExperience = ({ skills }: { skills: { [key: string]: string } }) => {
   const experiences: Experience[] = [
     {
+      company: "Freelance Digital Marketer",
+      position: "",
+      fromDate: "July 2025",
+      toDate: "present",
+      description: "- Customize and maintain small businesses' online presences to grow their customer base, increase revenue, and save them time\n\n- Develop websites, design social media posts, optimize search engine listings, and communicate with customers\n\n- Work with clients to develop an understand business goals and marketing strategy",
+      projects: [
+        {
+          title: "Dance For World Community Website",
+          skills: ["Wordpress", "Digital Marketing", "Client Engagement"], description: "",
+          link: "https://www.danceforworldcommunity.org/",
+          image: "/images/commoncrow.PNG",
+          year: 2025
+        },
+        {
+          title: "Justified Self-Defense",
+          skills: ["Web Design","Amazon SES","Wix","Google Business Profile","Digital Marketing"], description: "- Developed proof of concept to demonstrate secure, multi-channel messaging functionality between administrators, financial advisors, and clients. \n\n- Rapidly upskilled in GraphQL and AWS AppSync to develop data models and achieve real-time data sync, replacing WebSockets; debugged the user interface using Flutter and Dart, and integrated MS Teams, meeting key project milestones. \n\n- Presented live demos to highlight features and value to stakeholders.",
+          link: "https://www.justifiedselfdefense.com/",
+          image: "/images/commoncrow.PNG",
+          year: 2025
+        },
+        {
+          title: "Common Crow Natural Market Website",
+          skills: ["Weebly", "Photoshop"], description: "- Created a tool using JavaScript and Mermaid to transform complex contact center workflows into clear, visually distinct flowcharts. \n\n- Enhanced client understanding and interaction with these flows and reduced labor required for generating project documentation. \n\n- Authored an in-depth blog post on the tool, showcasing the company's innovative services and driving client acquisition.",
+          link: "http://www.commoncrow.com/",
+          image: "/images/commoncrow.PNG",
+          year: 2024
+        },
+
+      ],
+    },
+    {
       company: "Perficient",
       position: "Associate Software Engineer Consultant",
       fromDate: "January 2022",
