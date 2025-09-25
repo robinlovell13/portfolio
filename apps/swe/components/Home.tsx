@@ -602,7 +602,7 @@ export default function Home() {
             <div className="max-w-screen-2xl mx-auto px-1 sm:px-6 md:px-8">
                 {forEmployers ? <section id="home" className="min-h-screen flex flex-col items-center justify-center">
                     <div className="text-center">
-                        <h1 className="text-2xl sm:text-6xl mb-4">Software Engineer</h1>
+                        <h1 className="text-2xl sm:text-6xl mb-4">Digital Marketer | Software Engineer</h1>
                         <p className="text-lg sm:text-xl">Next.js | AWS | JavaScript | Amazon Connect | Custom LLMs</p>
 
                     </div>
