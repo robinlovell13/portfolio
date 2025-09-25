@@ -26,8 +26,8 @@ export interface Skill {
 const ProfessionalExperience = ({ skills }: { skills: { [key: string]: string } }) => {
   const experiences: Experience[] = [
     {
-      company: "Freelance Digital Marketer",
-      position: "",
+      company: "",
+      position: "Freelance Digital Marketer",
       fromDate: "July 2025",
       toDate: "present",
       description: "- Customize and maintain small businesses' online presences to grow their customer base, increase revenue, and save clients time\n\n- Design websites and social media posts, optimize search engine, and respond to inquiries from prospective customers\n\n- Work with clients to understand preferences and business goals and plan a marketing strategy",
