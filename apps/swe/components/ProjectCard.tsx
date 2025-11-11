@@ -32,6 +32,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, skills }) => {
     className={`bg-transparent border-2 rounded-lg p-4 relative pt-6 block
       ${project.isActive ? "border-green-500" : "border-white"} 
       ${project.link ? "cursor-pointer hover:bg-gray-800 transition-colors duration-200" : "cursor-default"}`}
+    target="_blank" 
+    rel="noopener noreferrer"
   >
     
       <h6 className="text-lg font-semibold mb-2">{project.title}</h6>

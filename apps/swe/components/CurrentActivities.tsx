@@ -32,7 +32,7 @@ interface Category {
 export interface Skill {
   name: string
   image: string,
-  proficiency: number 
+  proficiency: number
 }
 export interface SkillCategory {
   name: string
@@ -43,30 +43,37 @@ const formatDate = (date: Date | undefined): string => {
   return date ? date.toLocaleDateString("en-US", { year: "numeric", month: "short" }) : ""
 }
 const CurrentActivities = ({ skills }: { skills: { [key: string]: string } }) => {
-  
+
 
   const categories: Category[] = [
     {
       name: "Personal Projects",
       projects: [
-        { title: "Neighborhood Matcher", skills: ["Next.js", "Tailwind CSS", "Python", "OpenAI API", "Google Places API"], description: "Matches neighborhoods in two cities based on cultural, geographic, or socioeconomic relevance", startDate: new Date(2024, 11), image: "/images/neighborhood-matcher.PNG", link: "https://neighborhood-mapper-kappa.vercel.app/", team: ["Jeffrey Torres", "me"], status: "In Progress", currentTask: "Fix custom origin/destination feature" },
-        { title: "Personal Website", skills: ["Next.js", "Tailwind CSS"], image: "/images/personal-website.PNG", description: "Central repository for my creative and professional endeavors", link: "https://github.com/robinlovell13/portfolio", startDate: new Date(2025, 1), currentTask: "Add projects", status: "In Progress" },
-        { title: "Health Tracker", skills: ["SvelteKit", "JavaScript", "AWS"], description: "Personal wellbeing tracker", startDate: new Date(2023, 8), endDate: new Date(2023, 11), status: "In Progress", currentTask: "Add auth and deploy" },
-        { title: "Kaella Makeup Store POC", skills: ["SvelteKit", "JavaScript", "AWS", "Azure DevOps"], image: "images/kaella.PNG",description: "Simple ecommerce website POC for a Peruvian small business that allows users to browse items and add to cart", startDate: new Date(2023, 5), endDate: new Date(2023, 8), status: "Done", link: "https://kaella-eta.vercel.app/" },
+        { title: "Software Engineering Website", skills: ["Next.js", "Tailwind CSS"], image: "/images/personal-website.PNG", description: "Central repository for my creative and professional endeavors", link: "https://github.com/robinlovell13/portfolio", startDate: new Date(2025, 1), endDate: new Date(2025, 3), currentTask: "Add projects", status: "Done" },
+        {
+          title: "Digital Marketing Website",
+          startDate: new Date(2025, 1), endDate: new Date(2025, 3),
+          skills: ["Next.js", "TypeScript", "Vercel", "React", "Web Design"], description: "",
+          link: "https://social.robinlovell.com/",
+          image: "/images/digitalmarketingwebsite.PNG",
+          status: "Done",
+          
+        },
+        { title: "Kaella Makeup Store POC", skills: ["SvelteKit", "JavaScript", "AWS", "Azure DevOps"], image: "images/kaella.PNG", description: "Simple ecommerce website POC for a Peruvian small business that allows users to browse items and add to cart", startDate: new Date(2023, 5), endDate: new Date(2023, 8), status: "Done", link: "https://kaella-eta.vercel.app/" },
         { title: "Kubernetes", skills: [], description: "Kubernetes open-source project", currentProgress: 0, total: 100, status: "To Do" },
       ],
     },
     {
       name: "Self-study",
       projects: [
-        { title: "Build an LLM from Scratch", skills: ["Custom LLMs","Python", "PyTorch", "Machine Learning"], description: "Learn to implement custom LLMs through this book by Sebastian Raschka", startDate: new Date(2024, 11), currentProgress: 32, total: 100, label: "32% complete", status: "In Progress", isActive: true, currentTask: "Chapter 3" },
+        { title: "Build an LLM from Scratch", skills: ["Custom LLMs", "Python", "PyTorch", "Machine Learning"], description: "Learn to implement custom LLMs through book by Sebastian Raschka", startDate: new Date(2024, 11), currentProgress: 32, total: 100, label: "32% complete", status: "In Progress", isActive: true, currentTask: "Chapter 3" },
         { title: "Fundamentals of Software Architecture", skills: [], description: "Book & course by Mark Richards and Neal Ford", startDate: new Date(2024, 11), currentProgress: 10, total: 100, label: "10% complete", status: "In Progress" },
         // { title: "UX Design", skills: [], description: "", status: "To Do" },
         // { title: "Tailwind CSS", skills: [], description: "", status: "To Do" }
 
       ],
     },
-   
+
     // {
     //   name: "Activities and Interests",
     //   projects: [
@@ -90,35 +97,35 @@ const CurrentActivities = ({ skills }: { skills: { [key: string]: string } }) =>
   const renderProjectCard = (project: Project) => (
 
     <a
-  key={project.title}
-  href={project.link || "#"}
-  className={`bg-transparent border-2 rounded-lg p-4 relative pt-6 block
+      key={project.title}
+      href={project.link || "#"}
+      className={`bg-transparent border-2 rounded-lg p-4 relative pt-6 block
     ${project.isActive ? "border-green-500" : "border-white"} 
     ${project.link ? "cursor-pointer hover:bg-gray-800 transition-colors duration-200" : "cursor-default"}`}
->
+    >
       {project.isActive && (
         <div className="absolute top-0 right-0 bg-green-500 text-xs text-black font-bold px-2 py-1 rounded-lg">
           Active Project
         </div>
       )}
-    
+
       <h5 className="font-semibold mb-2 text-lg">{project.title}</h5>
       {project.image && (
-      <div className="mb-4">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-40 object-cover rounded-lg"
-        />
-      </div>
-    )}
-     <div className="flex flex-wrap gap-x-2 gap-y-2 mb-2">
+        <div className="mb-4">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-40 object-cover rounded-lg"
+          />
+        </div>
+      )}
+      <div className="flex flex-wrap gap-x-2 gap-y-2 mb-2">
         {project.skills.map((skill: string, skillIndex) => (
           <ProjectSkill
-          skill={skill}
-          image={skills[skill] || ""}
-          key={skillIndex}
-        />
+            skill={skill}
+            image={skills[skill] || ""}
+            key={skillIndex}
+          />
         ))}
       </div>
       <p className="text-md text-gray-300 mb-2">{project.description}</p>
@@ -127,7 +134,7 @@ const CurrentActivities = ({ skills }: { skills: { [key: string]: string } }) =>
           {formatDate(project.startDate)} - {project.endDate ? formatDate(project.endDate) : "Present"}
         </p>
       )}
-     
+
       {project.status === 'In Progress' && project.currentProgress !== undefined && (
         <div>
           <ProgressBar currentProgress={project.currentProgress} total={project.total} />
