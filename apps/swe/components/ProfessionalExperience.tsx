@@ -50,7 +50,7 @@ const ProfessionalExperience = ({ skills }: { skills: { [key: string]: string } 
           title: "Fix on Main",
           skills: ["UX Design", "Squarespace"], description: "",
           link: "Fix on Main",
-          image: "/images/digitalmarketingwebsite.PNG",
+          image: "",
           year: 2024
         },
 
