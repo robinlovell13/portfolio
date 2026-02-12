@@ -36,14 +36,14 @@ const ProfessionalExperience = ({ skills }: { skills: { [key: string]: string } 
           title: "Dance For World Community",
           skills: ["UX Design", "Wordpress", "phpBB", "HTML", "CSS"], description: "Work one-on-one with the founder of a non-profit dance organization to refine and develop a member forum for its website",
           link: "https://www.danceforworldcommunity.org/",
-          image: "/images/danceforworldcommunity.PNG",
+          image: "/images/danceforworldcommunity.png",
           year: 2025
         },
         {
           title: "Justified Self-Defense",
           skills: ["UX Design","Amazon SES","Wix","Google Business Profile","Digital Marketing"], description: "Set up and maintain online presence for a self-defense instructor including website, search engine profile, and social media",
           link: "https://www.justifiedselfdefense.com/",
-          image: "/images/jsd.PNG",
+          image: "/images/jsd.png",
           year: 2025
         },
         {
