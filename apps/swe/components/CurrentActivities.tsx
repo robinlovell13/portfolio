@@ -55,7 +55,7 @@ const CurrentActivities = ({ skills }: { skills: { [key: string]: string } }) =>
           startDate: new Date(2025, 1), endDate: new Date(2025, 3),
           skills: ["Next.js", "TypeScript", "Vercel", "React", "Web Design"], description: "",
           link: "https://social.robinlovell.com/",
-          image: "/images/digitalmarketingwebsite.PNG",
+          image: "/images/digitalmarketingwebsite.png",
           status: "Done",
           
         },
